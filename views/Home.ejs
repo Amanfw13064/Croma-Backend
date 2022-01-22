@@ -1,0 +1,855 @@
+   
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/home.css" />
+    <link rel="stylesheet" href="/css/croma.css">
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+ 
+  </head>
+  <body>
+    <div id="SignUp">
+      <div><i class="fas fa-times" onclick="close1()"></i></div>
+      <form id="form">
+          <input type="text" id="name1" placeholder="Enter Name"><br>
+          <input type="email" id="email" placeholder="Enter Email"><br>
+          <input type="password" id="pass" placeholder="Password"><br>
+          <input type="text" id="username" placeholder="Username"><br>
+          <input type="number" id="mobile" placeholder="Contact Number"><br>
+          <input type="text" id="description" placeholder="Description"><br>
+         <a href="/auth/google" style="color: wheat;text-decoration: none;">Continue With Google</a>//<a href="#" onclick="Sin()">Sign in</a>
+         <div id="div-sub"><button id="submit">Submit</button> <div id="pro"></div></div>
+      </form>
+  </div>
+  <div id="Signin">
+      <div><i class="fas fa-times" onclick="close2()"></i></div>
+      <input type="text" id="emailIn" placeholder="Email"><br>
+      <input type="password" id="passIn" placeholder="Password"><br>
+     <div id="div-sub1"><button id="submit1" onclick="SIgn()">Submit</button> <div id="pro1"></div></div>
+  </div>
+    <div id="PinCode">
+        <i class="fas fa-map-marker-alt"></i> PINCODE <a href="">415002 <i class="fas fa-edit"></i></a>
+    </div>
+    <div id="header">
+        <div id="logo">
+            <img src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://www.croma.com/assets/images/croma_logo_dark.png/mxw_160,f_auto">
+        </div>
+        <div>
+            <span id="Menu">&#8801; Menu</span>
+            <span id="Cross">&#10060; Menu</span>
+        </div>
+        <div id="Search_Inputs">
+          <div>
+              <input type="text" placeholder="What are you looking for?" id="input_search">
+          </div>
+          <div>
+              <button id="search_search"><i class="fas fa-search"></i></button>
+          </div>
+      </div>
+        <div id="Pre_Options">
+            <span>ORDERS</span>
+            <span id="Sign" onclick="Sign()">SIGN IN</span>
+            <span>|</span>
+            <span>
+                <i class="fas fa-shopping-cart"></i>
+                CART
+            </span>
+        </div>
+    </div>
+    <div id="Category_Menu">
+        <li id="Category">SHOP BY CATEGORY
+            <ul id="TVs">Televisions & Accessories
+                    <ul id="TVs_Show">
+                        <div id="Div_TVs">
+                        <ul>LED TVs</ul><br>
+                        <ul>QLED TVs</ul><br>
+                        <ul>OLED TVs</ul><br>
+                        <ul>4K ultra HD TVs</ul><br>
+                        <ul>8K ultra HD TVs</ul><br>
+                        <ul>Smart TVs</ul><br>
+                        <ul>Full HD TVs</ul><br>
+                        <ul>HD Ready TVs</ul><br>
+                        <ul>Android Smart TVs</ul><br>
+                        <ul>Large Screen TVs</ul>
+                    </div>
+                    </ul>
+            </ul>
+            <ul id="Home_Appliances">Home Appliances
+                <ul id="Home_Show">
+                    <div id="Div_Home">
+                    <ul>Washing Machines & Dryers</ul><br>
+                    <ul>Front Load Washing Machines</ul><br>
+                    <ul>Top Load Washing Machines</ul><br>
+                    <ul>Rfigerators & Freezers</ul><br>
+                    <ul>Double/Tripple Door Refrigerator</ul><br>
+                    <ul>Ice Makers</ul><br>
+                    <ul>Air Conditioners</ul><br>
+                    <ul>Vacuum Cleaners</ul><br>
+                    <ul>Irons</ul><br>
+                    <ul>Home Safety Security</ul>
+                </div>
+                </ul>
+            </ul>
+            <ul id="Phones">Phones & Wearables
+                <ul id="Phone_Show">
+                    <div id="Div_Phone">
+                    <ul>Mobile Phones</ul><br>
+                    <ul>Android Phones</ul><br>
+                    <ul>iPhones</ul><br>
+                    <ul>Gaming Mobile Phones</ul><br>
+                    <ul>Wearables</ul><br>
+                    <ul>Smart Watches</ul><br>
+                    <ul>VR Headset</ul><br>
+                    <ul>Bluetooth Headphones</ul><br>
+                    <ul>Mobile Accessories</ul><br>
+                    <ul>Truly Wireless Earbuds</ul>
+                    </div>
+                </ul>
+            </ul>
+            <ul id="Computers">Computers & Tablets
+                <ul id="Computers_Show">
+                    <div id="Div_Computers">
+                    <ul>Laptops</ul><br>
+                    <ul>MacBooks</ul><br>
+                    <ul>Gaming Laptops</ul><br>
+                    <ul>Windows Laptops</ul><br>
+                    <ul>iPads</ul><br>
+                    <ul>Ultra Thin Laptops</ul><br>
+                    <ul>Digital Pads</ul><br>
+                    <ul>Inject Printers</ul><br>
+                    <ul>3D Printers & 3D Pens</ul><br>
+                    <ul>Pen Drives</ul>
+                    </div>
+                </ul>
+            </ul>
+            <ul id="Kitchen">Kitchen Appliances
+                <ul id="Kitchen_Show">
+                    <div id="Div_Kitchen">
+                    <ul>Dishwashers</ul><br>
+                    <ul>Microwave & Ovens</ul><br>
+                    <ul>Rice Cookers</ul><br>
+                    <ul>Coffee Makers</ul><br>
+                    <ul>Tea Makers</ul><br>
+                    <ul>Cooking Appliances</ul><br>
+                    <ul>Air Fryers</ul><br>
+                    <ul>Hobs</ul><br>
+                    <ul>Gas Stove</ul><br>
+                    <ul>Juicers & Blenders</ul>
+                    </div>
+                </ul>
+            </ul>
+            <ul id="Audio">Audio & Video
+                <ul id="Audio_Show">
+                    <div id="Div_Audio">
+                    <ul>Media Players</ul><br>
+                    <ul>Earphones</ul><br>
+                    <ul>Croma Media Players</ul><br>
+                    <ul>Speakers</ul><br>
+                    <ul>Smart Speakers</ul><br>
+                    <ul>Audio Accessories</ul><br>
+                    <ul>Ultra HD 4K Projectors</ul><br>
+                    <ul>Audio Cases & Covers</ul><br>
+                    <ul>Croma Speakers</ul><br>
+                    <ul>Other Audio Systems</ul>
+                </div>
+                </ul>
+            </ul>
+            <ul id="Health">Health & Fitness
+                <ul id="Health_Show">
+                    <div id="Div_Health">
+                    <ul>Health Care Products</ul><br>
+                    <ul>Massagers</ul><br>
+                    <ul>Weights & Scales</ul><br>
+                    <ul>Sanitization Products</ul><br>
+                    <ul>Nebulizers</ul><br>
+                    <ul>Hearing Aids</ul><br>
+                    <ul>Health Monitors</ul><br>
+                    <ul>Baby Care Products</ul><br>
+                    <ul>Fitness Equipments</ul><br>
+                    <ul>Covid-19 Essentials</ul>
+                </div>
+                </ul>
+            </ul>
+            <ul id="Grooming">Grooming & Personal Care
+                <ul id="Grooming_Show">
+                    <div id="Div_Grooming">
+                    <ul>Hair Care Products</ul><br>
+                    <ul>Hair Straightners</ul><br>
+                    <ul>Hair Dryers</ul><br>
+                    <ul>Hair Stylers</ul><br>
+                    <ul>Croma Hair Care Products</ul><br>
+                    <ul>Personal Grooming Products</ul><br>
+                    <ul>Epilators</ul><br>
+                    <ul>Trimmers</ul><br>
+                    <ul>Shavers</ul><br>
+                    <ul>Pet Care Products</ul>
+                </div>
+                </ul>
+            </ul>
+            <ul id="Cameras">Cameras & Accessories
+                <ul id="Cameras_Show">
+                    <div id="Div_Cameras">
+                    <ul>Point & Shoot Cameras</ul><br>
+                    <ul>Instant Cameras</ul><br>
+                    <ul>DSLR Cameras</ul><br>
+                    <ul>Mirrorless Cameras</ul><br>
+                    <ul>Camera Lens</ul><br>
+                    <ul>Camcorders</ul><br>
+                    <ul>Memmory Cards</ul><br>
+                    <ul>Camera Filters</ul><br>
+                    <ul>Photo Paper Sheets</ul><br>
+                    <ul>Camera Accessories</ul>
+                </div>
+                </ul>
+            </ul>
+            <ul id="Smart">Smart Devices
+                <ul id="Smart_Show">
+                    <div id="Div_Smart">
+                    <ul>Smart Kitchen Devices</ul><br>
+                    <ul>Smart Home Devices</ul><br>
+                    <ul>Smart Display</ul><br>
+                    <ul>Universal & Smart Remotes</ul><br>
+                    <ul>Smart TVs</ul><br>
+                    <ul>Smart ACs</ul><br>
+                    <ul>Smart Air Purifiers</ul><br>
+                    <ul>Smart Fans</ul><br>
+                    <ul>Smart Plugs</ul><br>
+                    <ul>Smart Work Devices</ul>
+                </div>
+                </ul>
+            </ul>
+            <ul id="Gaming">Gaming
+                <ul id="Gaming_Show">
+                    <div id="Div_Gaming">
+                    <ul>Gaming Consoles</ul><br>
+                    <ul>Gaming Laptops</ul><br>
+                    <ul>Gaming Softwares</ul><br>
+                    <ul>PlayStations Games</ul><br>
+                    <ul>Gaming Accessories</ul><br>
+                    <ul>Gaming Mice</ul><br>
+                    <ul>Electronic Toys</ul><br>
+                    <ul>Educationals Toys</ul><br>
+                    <ul>Robot Toys & Accessories</ul><br>
+                    <ul>Walkie Talkies</ul>
+                </div>
+                </ul>
+            </ul>
+            <ul id="Accessories">Accessories
+                <ul id="Accessories_Show">
+                    <div id="Div_Accessories">
+                    <ul>Traveller Accessories</ul><br>
+                    <ul>Smart Wallets</ul><br>
+                    <ul>Travel Bags</ul><br>
+                    <ul>Car Accessories</ul><br>
+                    <ul>Gift & Value Card</ul><br>
+                    <ul>TV Cables & Connectors</ul><br>
+                    <ul>Tablets Keyboards</ul><br>
+                    <ul>Battries & Charges</ul><br>
+                    <ul>Screen Protectors</ul><br>
+                    <ul>Laptops Webcams & Mice</ul>
+                </div>
+                </ul>
+            </ul>
+            <ul id="Brands">Top Brands
+                <ul id="Brands_Show">
+                    <div id="Div_Brands">
+                    <ul>Amazon</ul><br>
+                    <ul>Apple</ul><br>
+                    <ul>Bajaj</ul><br>
+                    <ul>Blue Star</ul><br>
+                    <ul>Boat</ul><br>
+                    <ul>Bosch</ul><br>
+                    <ul>Bose</ul><br>
+                    <ul>Canon</ul><br>
+                    <ul>Realme</ul><br>
+                    <ul>Samsung</ul>
+                </div>
+                </ul>
+            </ul>
+        </li>
+    </div>
+    <!-- <div id="Nav_Bar"></div> -->
+
+    <!-- links container -->
+    <div class="linksIcon">
+      <ul class="links-container">
+        <li class="link-item">
+          <a href="/Mobiles" class="link">
+            <span id="phones"><i class="fas fa-mobile-alt"></i> </span>Mobiles</a
+          >
+        </li>
+        <li class="link-item">
+          <a href="" class="link"
+            ><span><i class="fas fa-tv"></i> </span> Televisions</a
+          >
+        </li>
+        <li class="link-item">
+          <a href="" class="link"
+            ><span><i class="fas fa-laptop"></i> </span> Laptops</a
+          >
+        </li>
+        <li class="link-item">
+          <a href="" class="link"
+            ><span><i class="fas fa-headphones"></i> </span> Audio</a
+          >
+        </li>
+        <li class="link-item">
+          <a href="" class="link"
+            ><span><i class="far fa-snowflake"></i> </span> Refrigerators</a
+          >
+        </li>
+        <li class="link-item">
+          <a href="" class="link"
+            ><span><i class="fas fa-blender"></i> </span> Kitchen Appliances</a
+          >
+        </li>
+        <li class="link-item">
+          <a href="" class="link"
+            ><span><i class="fas fa-fan"></i> </span> Washing</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <div class="img-wrapper">
+      <img
+        class="inside"
+        src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1638965101/Croma%20Assets/CMS/Homepage%20Banners/HP%20Rotating/2021/HP_iPhone13Series_8Dec_rapza1.jpg/mxw_2048,f_auto"
+        alt=""
+      />
+    </div>
+    <section class="highlights" style="margin-top: 20px;">
+      <h2 class="highlight-category">Highlights</h2>
+
+
+      <div class="highlight-container" style="margin-top: 100px;">
+        <!-- start of highlight card -->
+        <div class="highlight-card">
+          <div class="highlight-image">
+            <img
+              src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1638984838/Croma%20Assets/CMS/Homepage%20Banners/Highlights/2021/HP_Tile_TravelEssentials_8Dec_cnvgkg.png/mxw_2048,f_auto"
+              class="highlight-thumb"
+              alt=""
+            />
+          </div>
+        </div>
+        <!-- end of product card -->
+        <!-- start of highlight card -->
+        <div class="highlight-card">
+          <div class="highlight-image">
+            <img
+              src="https://media.croma.com/image/upload/v1639036898/Croma%20Assets/CMS/Homepage%20Banners/Highlights/2021/HP_BB_Highlight_SamsungGalaxyZ-Flip3_9Dec_np6rac.png"
+              class="highlight-thumb"
+              alt=""
+            />
+          </div>
+        </div>
+        <!-- end of product card -->
+        <!-- start of highlight card -->
+        <div class="highlight-card">
+          <div class="highlight-image">
+            <img
+              src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1636305721/Croma%20Assets/CMS/Homepage%20Banners/Highlights/2021/HP_Tile_CromaFireTV_5Nov_oala7u.jpg/mxw_2048,f_auto"
+              class="highlight-thumb"
+              alt=""
+            />
+          </div>
+        </div>
+        <!-- end of product card -->
+      </div>
+    </section>
+    <!-- end of highlights section -->
+
+    <!-- highlights section -->
+
+    <section class="highlights">
+      <h2 class="highlight-category">Popular Brands</h2>
+      <!-- <button class="pre-btn">
+        <span><i class="fas fa-angle-left"></i></span>
+      </button>
+      <button class="nxt-btn"><img src="images/arrow.png" alt="" /></button> -->
+
+      <div class="highlight-container">
+        <!-- start of highlight card -->
+        <div class="highlight-card">
+          <div class="highlight-image">
+            <img
+              src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1638953164/Croma%20Assets/CMS/Homepage%20Banners/Popular%20Brands/HP_Block_PB_Earphones_2_07-Dec_bs8jei.png/mxw_2048,f_auto"
+              class="highlight-thumb"
+              alt=""
+            />
+          </div>
+        </div>
+        <!-- end of product card -->
+        <!-- start of highlight card -->
+        <div class="highlight-card">
+          <div class="highlight-image">
+            <img
+              src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1637652275/Croma%20Assets/CMS/Homepage%20Banners/Popular%20Brands/HP_Block_PB_HisenseTV-5YearWarranty_23Nov-2_cdbipw.jpg/mxw_2048,f_auto"
+              class="highlight-thumb"
+              alt=""
+            />
+          </div>
+        </div>
+        <!-- end of product card -->
+        <!-- start of highlight card -->
+        <div class="highlight-card">
+          <div class="highlight-image">
+            <img
+              src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1638198915/Croma%20Assets/CMS/HP_Block_PB_FrostFreeRef_29Nov-2_mh93wt.png/mxw_2048,f_auto"
+              class="highlight-thumb"
+              alt=""
+            />
+          </div>
+        </div>
+        <!-- end of product card -->
+      </div>
+    </section>
+    <!-- end of highlights section -->
+
+    <!-- showcase product -->
+    <section class="product">
+      <h2 class="product-category">Popular Products</h2>
+      <!-- <button class="pre-btn"><img src="images/arrow.png" alt="" /></button>
+      <button class="nxt-btn"><img src="images/arrow.png" alt="" /></button> -->
+      <div class="product-container">
+        <!-- start of product card -->  
+        <% items.forEach((product)=>{ %>
+        <div class="product-card">
+          <div class="product-image"><a href="/Home/<%= product._id%>/productInfo">
+            <span class="discount-tag"><i class="far fa-heart"></i></span>
+            <img
+              src=<%=  product.image_url[0] %>
+              class="product-thumb"
+              alt=""
+            />
+          </div></a>
+
+          <div class="product-info">
+            <h2 class="product-brand" style="font-size: 20px;"><%= product.name %></h2>
+            <!-- <p class="product-short-des">Lorem ipsum dolor sit amet.</p> -->
+            <div id="rupee">
+              <!-- <span class="price" id="priceRs">₹49,900.00 </span> -->
+              ₹<%= product.price[0] %><span2 style="color: cyan; font-size: 18px;">₹<%= product.price[1] %></span2>
+            </div>
+            <div class="star">
+                <h2>&#9733;&#9733;&#9733;&#9733;&#9734;</h2>
+            </div>
+          </div>
+        </div>
+        <% }) %> 
+      
+        <!-- end of product card -->
+      </div>
+    </section>
+
+    <!-- showcase product -->
+
+    <!-- laptop -->
+    <section class="product">
+      <h2 class="product-category">Laptops & Tablets</h2>
+      <!-- <button class="pre-btn"><img src="images/arrow.png" alt="" /></button>
+      <button class="nxt-btn"><img src="images/arrow.png" alt="" /></button> -->
+      <div class="product-container">
+        <!-- start of product card -->
+             <% items2.forEach((product)=>{ %>
+          <div class="product-card">
+            <div class="product-image"><a href="/Home/<%= product._id%>/productInfo">
+              <span class="discount-tag"><i class="far fa-heart"></i></span>
+              <img
+                src=<%=  product.image_url[0] %>
+                class="product-thumb"
+                alt=""
+              />
+            </div></a>
+  
+            <div class="product-info">
+              <h2 class="product-brand" style="font-size: 20px;"><%= product.name %></h2>
+              <!-- <p class="product-short-des">Lorem ipsum dolor sit amet.</p> -->
+              <div id="rupee">
+                <!-- <span class="price" id="priceRs">₹49,900.00 </span> -->
+                ₹<%= product.price[0] %><span2 style="color: cyan; font-size: 18px;">₹<%= product.price[1] %></span2>
+              </div>
+              <div class="star">
+                  <h2>&#9733;&#9733;&#9733;&#9733;&#9734;</h2>
+              </div>
+            </div>
+          </div>
+          <% }) %> 
+        
+        <!-- end of product card -->
+      </div>
+    </section>
+    <!-- laptop -->
+
+    <div class="knowMore">
+      <div class="contImg">
+        <img
+          src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1614952617/Croma%20Assets/CMS/Homepage%20Banners/New%20Campaign/HP_Block_Bank-Offer_600x380_-Up-to-12-Months-No-Cost-EMI_3-March_grmlnp.jpg/mxw_2048,f_auto"
+          alt=""
+        />
+
+        <p id="para">Know More</p>
+      </div>
+      <div class="contImg">
+        <img
+          src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1638943735/Croma%20Assets/CMS/Homepage%20Banners/Highlights/2021/DEC%202021/HP_Block_Bank_Offer_600x380-Wed_Thu_3Dec_zbkbht.png/mxw_2048,f_auto"
+          alt=""
+        />
+        <p id="para">Know More</p>
+      </div>
+      <div class="contImg">
+        <img
+          src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1637225960/Croma%20Assets/CMS/Homepage%20Banners/Croma%20Recommends/2021/HP_Block_600x380_Android-Tablets_18-Nov_eug98a.jpg/mxw_2048,f_auto"
+          alt=""
+        />
+        <p id="para">Buy Now</p>
+      </div>
+      <div class="contImg">
+        <img
+          src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1614354781/Croma%20Assets/CMS/Homepage%20Banners/New%20Campaign/HP_Block_Bank-Offer_600x380_Pocket-friendly_26-Feb_kkdwu8.jpg/mxw_2048,f_auto"
+          alt=""
+        />
+        <p id="para">Buy Now</p>
+      </div>
+    </div>
+
+    <!-- audio  -->
+    <section class="product">
+      <h2 class="product-category">Keypad Phones</h2>
+      <!-- <button class="pre-btn"><img src="images/arrow.png" alt="" /></button>
+      <button class="nxt-btn"><img src="images/arrow.png" alt="" /></button> -->
+      <div class="product-container">
+        <!-- start of product card -->
+        <% items3.forEach((product)=>{ %>
+          <div class="product-card">
+            <div class="product-image"><a href="/Home/<%= product._id%>/productInfo">
+              <span class="discount-tag"><i class="far fa-heart"></i></span>
+              <img
+                src=<%=  product.image_url[0] %>
+                class="product-thumb"
+                alt=""
+              />
+            </div></a>
+  
+            <div class="product-info">
+              <h2 class="product-brand" style="font-size: 20px;"><%= product.name %></h2>
+              <!-- <p class="product-short-des">Lorem ipsum dolor sit amet.</p> -->
+              <div id="rupee">
+                <!-- <span class="price" id="priceRs">₹49,900.00 </span> -->
+                ₹<%= product.price[0] %><span2 style="color: cyan; font-size: 18px;">₹<%= product.price[1] %></span2>
+              </div>
+              <div class="star">
+                  <h2>&#9733;&#9733;&#9733;&#9733;&#9734;</h2>
+              </div>
+            </div>
+          </div>
+          <% }) %> 
+        <!-- end of product card -->
+      </div>
+    </section>
+    <!-- audio  -->
+
+    <!-- apple at chroma -->
+    <div class="Options">
+      <img
+        class="OP_Img"
+        src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1632482428/Croma%20Assets/CMS/Homepage%20Banners/Apple%20at%20Croma/HP_AppleBlocks_350x350-MacBooks_24Sep_wdix7q.jpg/mxw_2048,f_auto"
+      />
+      <img
+        class="OP_Img"
+        src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1632482427/Croma%20Assets/CMS/Homepage%20Banners/Apple%20at%20Croma/HP_AppleBlocks_350x350-AirPodsPro_24Sep_l2kgpb.jpg/mxw_2048,f_auto"
+      />
+      <img
+        class="OP_Img"
+        src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1632482427/Croma%20Assets/CMS/Homepage%20Banners/Apple%20at%20Croma/HP_AppleBlocks_350x350-iPads_24Sep_brozwm.jpg/mxw_2048,f_auto"
+      />
+      <img
+        class="OP_Img"
+        src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1632482428/Croma%20Assets/CMS/Homepage%20Banners/Apple%20at%20Croma/HP_AppleBlocks_350x350-iPhone12Series_24Sep_gyqqju.jpg/mxw_2048,f_auto"
+      />
+    </div>
+
+    <!-- personal grooming -->
+    <section class="product">
+      <h2 class="product-category">Audio</h2>
+      <!-- <button class="pre-btn"><img src="images/arrow.png" alt="" /></button>
+      <button class="nxt-btn"><img src="images/arrow.png" alt="" /></button> -->
+      <div class="product-container">
+        <!-- start of product card -->
+        <% items4.forEach((product)=>{ %>
+          <div class="product-card">
+            <div class="product-image"><a href="/Home/<%= product._id%>/productInfo">
+              <span class="discount-tag"><i class="far fa-heart"></i></span>
+              <img
+                src=<%=  product.image_url[0] %>
+                class="product-thumb"
+                alt=""
+              />
+            </div></a>
+  
+            <div class="product-info">
+              <h2 class="product-brand" style="font-size: 20px;"><%= product.name %></h2>
+              <!-- <p class="product-short-des">Lorem ipsum dolor sit amet.</p> -->
+              <div id="rupee">
+                <!-- <span class="price" id="priceRs">₹49,900.00 </span> -->
+                ₹<%= product.price[0] %><span2 style="color: cyan; font-size: 18px;">₹<%= product.price[1] %></span2>
+              </div>
+              <div class="star">
+                  <h2>&#9733;&#9733;&#9733;&#9733;&#9734;</h2>
+              </div>
+            </div>
+          </div>
+          <% }) %> 
+        <!-- end of product card -->
+      </div>
+    </section>
+    <!-- personal grooming -->
+
+    <div class="Options">
+      <img
+        class="Confuse"
+        src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1638882737/Croma%20Assets/CMS/Homepage%20Banners/Big%20Tile/HP_BigTile_HomeAppliances_07-Dec_ahjtbj.png/mxw_2048,f_auto"
+      />
+      <img
+        class="Confuse"
+        src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1638433378/Croma%20Assets/CMS/Homepage%20Banners/Big%20Tile/HP_BigTile_Tablets_2Dec_urlox5.png/mxw_2048,f_auto"
+      />
+    </div>
+
+    <!-- brand slider -->
+    <section class="product">
+      <h2 class="product-category">Top Brands</h2>
+      <!-- <button class="pre-btn"><img src="images/arrow.png" alt="" /></button>
+      <button class="nxt-btn"><img src="images/arrow.png" alt="" /></button> -->
+      <div class="product-container">
+        <!-- start of product card -->
+        <div class="product-card">
+          <div class="product-image" id="cp_brands">
+            <img
+              src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1605350807/Croma%20Assets/Categories/Brand%20Logo/8990738907166.png/mxw_2048,f_auto"
+              class="product-thumb"
+              alt=""
+            />
+          </div>
+        </div>
+        <!-- end of product card -->
+        <!-- start of product card -->
+        <div class="product-card">
+          <div class="product-image" id="cp_brands">
+            <img
+              src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1605350822/Croma%20Assets/Categories/Brand%20Logo/8990736908318.png/mxw_2048,f_auto"
+              class="product-thumb"
+              alt=""
+            />
+          </div>
+        </div>
+        <!-- end of product card -->
+        <!-- start of product card -->
+        <div class="product-card">
+          <div class="product-image" id="cp_brands">
+            <img
+              src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1605350809/Croma%20Assets/Categories/Brand%20Logo/8990731829278.png/mxw_2048,f_auto"
+              class="product-thumb"
+              alt=""
+            />
+          </div>
+        </div>
+        <!-- end of product card -->
+        <!-- start of product card -->
+        <div class="product-card">
+          <div class="product-image" id="cp_brands">
+            <img
+              src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1637840166/Croma%20Assets/Categories/Brand%20Logo/sony_white_t7nnpu.png/mxw_2048,f_auto"
+              class="product-thumb"
+              alt=""
+            />
+          </div>
+        </div>
+        <!-- end of product card -->
+        <!-- start of product card -->
+        <div class="product-card">
+          <div class="product-image" id="cp_brands">
+            <img
+              src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1605350818/Croma%20Assets/Categories/Brand%20Logo/8990734319646.png/mxw_2048,f_auto"
+              class="product-thumb"
+              alt=""
+            />
+          </div>
+        </div>
+        <!-- end of product card -->
+        <!-- start of product card -->
+        <div class="product-card">
+          <div class="product-image" id="cp_brands">
+            <img
+              src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1605350845/Croma%20Assets/Categories/Brand%20Logo/8990737825822.png/mxw_2048,f_auto"
+              class="product-thumb"
+              alt=""
+            />
+          </div>
+        </div>
+        <!-- end of product card -->
+        <!-- start of product card -->
+        <div class="product-card">
+          <div class="product-image" id="cp_brands">
+            <img
+              src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1605350811/Croma%20Assets/Categories/Brand%20Logo/8990739169310.png/mxw_2048,f_auto"
+              class="product-thumb"
+              alt=""
+            />
+          </div>
+        </div>
+        <!-- end of product card -->
+      </div>
+    </section>
+    <!-- brand slider -->
+
+    <!-- final text -->
+    <div class="final_text">
+      <p class="setAligmentBottom" style="padding: 25px 0px 0px 20px">
+        Launched in 2006, first one-of-its kind large format specialist retail
+        electronics store, Croma, caters to over 12 Million happy customers for
+        all of their multi-brand digital gadgets and home electronics. Since its
+        inception, Croma has become synonymous for all electronics needs, both
+        online &amp; in-store, with a wide product range and tech-savvy staff
+        with a will to help customers throughout their buying journeys.
+      </p>
+      <p class="setAligmentBottom" style="padding: 25px 0px 0px 20px">
+        With a promise of a
+        <strong>#BrighterEveryDay</strong>
+
+        to its customers, Croma offers a world-class ambience and seamless
+        omni-channel shopping experience to enjoy the best of both, the online
+        shopping &amp; the offline worlds. By availing Cromas omni-channel
+        services, as a customer, one can enjoy online shopping and have the
+        product delivered at their doorstep or can avail the pick-up from a
+
+        <strong>Croma store</strong>
+        near me service. Customers can also opt for
+        <strong>Zip Express</strong>
+        delivery service that makes sure to deliver the product at their
+        doorstep within 3 hours in select cities.
+      </p>
+      <p class="setAligmentBottom" style="padding: 25px 0px 0px 20px">
+        Whether you're setting up a new home or simply looking for an upgrade,
+        Croma offers an eclectic range of electronics to suit your needs. Browse
+        through an array of Home &amp; Kitchen Appliances such as
+
+        <strong>
+          <span style="text-decoration: underline"
+            ><a
+              style="color: blue; text-decoration: underline"
+              href="https://www.croma.com/home-appliances/air-conditioners/c/46"
+              >Air Conditioners</a
+            ></span
+          >
+          ,
+          <span style="text-decoration: underline"
+            ><a
+              style="color: blue; text-decoration: underline"
+              href="https://www.croma.com/home-appliances/refrigerators/c/47"
+              >Refrigerators</a
+            ></span
+          >
+          ,
+          <span style="text-decoration: underline"
+            ><a
+              style="color: blue; text-decoration: underline"
+              href="https://www.croma.com/home-appliances/washing-machines-dryers/c/48"
+              >Washing Machines</a
+            ></span
+          >
+          ,
+        </strong>
+        , Vacuum Cleaners, Microwave, Air Fryers, Soup Makers, Cooktops,
+        Dishwashers,
+        <strong
+          ><a
+            style="color: blue"
+            href=" https://www.croma.com/home-appliances/geysers/c/803 "
+          >
+            <u> Water Heaters</u></a
+          ></strong
+        >
+        and many more such product categories.
+      </p>
+    </div>
+    <!-- final text -->
+  -->
+    <!-- footer -->
+    <footer>
+      <div class="footer-content">
+        <div class="first">
+          <h4 id="connect">CONNECT WITH US</h4>
+          <div class="searchFirst">
+            <input
+              type="text"
+              class="search-boxFirst"
+              placeholder="Enter Email ID"
+            />
+
+            <button class="search-btnRight">
+              <i class="fa fa-arrow-right"></i>
+            </button>
+          </div>
+          <div class="footer-col">
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <h4 id="copy">© Copyright 2021 Croma. All rights reserved</h4>
+          </div>
+        </div>
+
+        <div class="footer-ul-container">
+          <div class="second">
+            <ul class="category">
+              <li class="category-title">Useful Links</li>
+
+              <li>
+                <a href="#" class="footer-link">About Croma</a>
+              </li>
+              <li><a href="#" class="footer-link">Help And Support</a></li>
+              <li><a href="#" class="footer-link">FAQs</a></li>
+              <li><a href="#" class="footer-link">Return Policy</a></li>
+              <li><a href="#" class="footer-link">Bulk Enquiry</a></li>
+              <li><a href="#" class="footer-link">E-care</a></li>
+              <li><a href="#" class="footer-link">Site Map</a></li>
+            </ul>
+          </div>
+          <div class="third">
+            <ul class="category">
+              <li class="category-title">Products</li>
+
+              <li>
+                <a href="#" class="footer-link">Televisions & Accessories</a>
+              </li>
+              <li><a href="#" class="footer-link">Home</a></li>
+              <li><a href="#" class="footer-link">Appliances</a></li>
+              <li><a href="#" class="footer-link">Phone & Wearables</a></li>
+              <li><a href="#" class="footer-link">Computers & Tablets</a></li>
+              <li><a href="#" class="footer-link">Kitchen Appliances</a></li>
+              <li><a href="#" class="footer-link">Audio & Video</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer -->
+  </body>
+</html>
+<!-- <script src="home.js"></script> -->
+ <script src="/js/home.js"></script>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/ea5026738a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/croma.css">
+</head>
+<body>
+    <div id="SignUp">
+        <div><i class="fas fa-times" onclick="close1()"></i></div>
+        <form id="form">
+            <input type="text" id="name1" placeholder="Enter Name"><br>
+            <input type="email" id="email" placeholder="Enter Email"><br>
+            <input type="password" id="pass" placeholder="Password"><br>
+            <input type="text" id="username" placeholder="Username"><br>
+            <input type="number" id="mobile" placeholder="Contact Number"><br>
+            <input type="text" id="description" placeholder="Description"><br>
+           <a href="/auth/google" style="color: wheat;text-decoration: none;">Continue With Google</a>//<a href="#" onclick="Sin()">Sign in</a>
+           <div id="div-sub"><button id="submit">Submit</button> <div id="pro"></div></div>
+        </form>
+    </div>
+    <div id="Signin">
+        <div><i class="fas fa-times" onclick="close2()"></i></div>
+        <input type="text" id="emailIn" placeholder="Email"><br>
+        <input type="password" id="passIn" placeholder="Password"><br>
+       <div id="div-sub1"><button id="submit1" onclick="SIgn()">Submit</button> <div id="pro1"></div></div>
+    </div>
+    <div id="PinCode">
+        <i class="fas fa-map-marker-alt"></i> PINCODE <a href="">415002 <i class="fas fa-edit"></i></a>
+    </div>
+    <div id="header">
+        <div id="logo">
+            <img src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://www.croma.com/assets/images/croma_logo_dark.png/mxw_160,f_auto">
+        </div>
+        <div>
+            <span id="Menu">&#8801; Menu</span>
+            <span id="Cross">&#10060; Menu</span>
+        </div>
+        <div id="Search_Inputs">
+            <div>
+                <input type="text" placeholder="What are you looking for?">
+            </div>
+            <div>
+                <button><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+        <div id="Pre_Options">
+            <span>ORDERS</span>
+            <span id="Sign" onclick="Sign()">SIGN IN</span>
+            <span>|</span>
+            <span>
+                <i class="fas fa-shopping-cart"></i>
+                CART
+            </span>
+        </div>
+    </div>
+    <h2 id="tota"></h2>
+    <div id="Pay" >
+        <form id="form1">
+            <i class="fab fa-paypal py"></i> <i class="fab fa-cc-visa py" ></i> <i class="fab fa-google-pay py"></i><i class="fab fa-apple-pay py"></i><i class="fab fa-amazon-pay py"></i><i class="fab fa-cc-paypal py"></i>
+            <br><br><label for="">CARD NUMBER</label><br>
+            <input type="number" id="card" placeholder="Valid Card Number"><br><br>
+            <label>EXPIRATION DATE</label><br>
+            <input type="text" placeholder="MM/YY" id="date"><br><br>
+            <label>CVV CODE</label><br>
+            <input type="number" id="cvv" placeholder="CVV"><br><br>
+            <label for="">CARD OWNER</label><br><input type="text" placeholder="CARD OWNER NAME" id="owner"><br><br>
+            
+           <div id="div-su"><button id="submit12">PAY</button> <div id="pro4"></div></div>
+        </form>
+        <section id="otp"></section>
+    </div>
+</body>
+</html>
+<!-- <script src="/js/cromapay.js"></script> -->
+<script src="/js/home.js"></script>
+<script>
+    
+    document.getElementById('form1').addEventListener('submit',function(e){
+        e.preventDefault();
+        let pro=document.getElementById("submit12");
+           pro.textContent="Proccesing"
+          let div=document.getElementById('pro4')
+          div.style.display="block"
+          setTimeout(()=>{
+            var ca=document.getElementById('card').value;
+        var da=document.getElementById('date').value;
+        var cv=document.getElementById('cvv').value;
+        var ow=document.getElementById('owner').value;
+        if(ca.length!==16)
+        {
+            alert("Invalid Card Number")
+          let div=document.getElementById('pro4')
+          div.style.display="none"
+        }
+        else if(da.length<4)
+        {
+            alert("Invalid Date ")
+          let div=document.getElementById('pro4')
+          div.style.display="none"
+        }
+        else if(cv.length!==3)
+        {
+            alert("Invalid CVV Number")
+          let div=document.getElementById('pro4')
+          div.style.display="none"
+        }
+        else if(ow.length<4)
+        {
+            alert("Invalid Card Name")
+          let div=document.getElementById('pro4')
+          div.style.display="none"
+        }else{
+
+         let Payment_details={
+             card_number:document.getElementById('card').value,
+         date:document.getElementById('date').value,
+         cvv_number:document.getElementById('cvv').value,
+         holder_name:document.getElementById('owner').value, 
+         }
+
+         Payment_details=JSON.stringify(Payment_details)
+         Verify()
+         async function Verify(){
+             let Payment_api="http://localhost:5555/payment";
+             let response=await fetch(Payment_api,{
+                 method:"POST",
+                 body:Payment_details,
+                 headers:{
+                     'Content-Type':'application/json'
+                 }
+             })
+            }
+             
+             OTP()
+             let token
+         async function OTP(){
+             let otp_api="http://localhost:5555/Otp";
+             let response=await fetch(otp_api,{
+                 method:"POST",
+             })
+             let data=await response.json()
+             console.log(data)
+             token=data.token
+             alert("OTP Send Please check your Email")
+                let pro=document.getElementById("submit12");
+           pro.textContent="Proccesing"
+          let div=document.getElementById('pro4')
+          div.style.display="none"
+          let dd=document.getElementById("div-su")
+          dd.style.display="none"
+          let sec=document.getElementById('otp')
+          sec.innerHTML=`<input type="Number" placeholder="OTP Number" id="OTp"><span id="minutes"></span><br><button id="otp_submit">Verify</button>`
+          let count=60
+          let ds=document.getElementById('minutes')
+      let inter= setInterval(()=>{
+             count-=1
+            ds.textContent=count
+            if(count==0)
+            {
+                clearInterval(inter)
+                alert('OTP Expired')
+            }
+    
+          },1000)
+          document.getElementById('otp_submit').addEventListener('click',()=>{
+              let otp_num=document.getElementById('OTp').value
+             let otp_Number={
+                 otp_no:otp_num,
+             }
+             otp_Number=JSON.stringify(otp_Number)
+             Verify1()
+         async function Verify1(){
+            
+             let otp_api="http://localhost:5555/Otp/verify";
+             let response=await fetch(otp_api,{
+                 method:"POST",
+                 body:otp_Number,
+                 headers:{
+                     'Content-Type':'application/json',
+                      'Authorization':`Bearer ${token}`,
+                 }
+             })
+             let data=await response.json()
+             console.log(data)
+             if(data.message=="Not Valid"){
+                 alert("OTP Not Valid Please Provide Valid Otp")
+             }else{
+                alert("Payment Successful")
+               alert('Thank You For Shopping')
+               location.href="/Home"
+             }
+            }
+          })
+           }
+         
+}},3000)
+})
+
+</script>

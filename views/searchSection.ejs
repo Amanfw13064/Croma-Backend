@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <script src="https://kit.fontawesome.com/ea5026738a.js" crossorigin="anonymous"></script>
+  <style>
+     body {
+    color: rgb(235, 231, 231);
+    background-color: black;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+#Main_Page {
+    margin: auto;
+    justify-content: center;
+  }
+  .OP_Text > span > a {
+    text-decoration: none;
+    color: white;
+  }
+  .Options {
+    margin: auto;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 50px;
+  }
+  .OP_Img {
+    width: 280px;
+    border-radius: 15px;
+  }
+  .OP_Text {
+    margin-left: 100px;
+    margin-top: 100px;
+  }
+  .Confuse {
+    width: 570px;
+  }
+  .One_Img {
+    width: 1150px;
+    margin-left: 90px;
+    margin-top: 50px;
+  }
+  #Final_Text {
+    width: 87%;
+    margin: auto;
+  }
+  img:hover {
+    cursor: pointer;
+  }
+  #For_Below {
+    margin-bottom: 50px;
+  }
+  #containerAX {
+    width: 99%;
+    margin: auto;
+  }
+  .Move_Op {
+    width: 100%;
+  }
+  .Move_Op::before {
+    display: block;
+  }
+  .Move_Op > .Moving_OP {
+    width: 100%;
+  }
+  .Move_Op > .Moving_OP:hover {
+    cursor: pointer;
+  }
+  .containerAXZ {
+    width: 87%;
+    margin: auto;
+    padding: 5px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    
+  }
+  .main-carousel>.carousel-cell{
+      border: solid 1px white;
+  }
+  .containerAXZ>.main-carousel>.carousel-cell>img{
+      width: 220px;
+      height: 300px;
+  } 
+  .Price_Sort {
+    width: 280px;
+  }
+  .Price_Sort::before {
+    display: block;
+  }
+  .Price_Sort > .Moving_OP {
+    width: 100%;
+  }
+  .Price_Sort > .Moving_OP:hover {
+    cursor: pointer;
+  }
+  .Brand_Sort {
+    width: 280px;
+  }
+  .Brand_Sort::before {
+    display: block;
+  }
+  .Brand_Sort > .Moving_OP {
+    width: 100%;
+  }
+  .Brand_Sort > .Moving_OP:hover {
+    cursor: pointer;
+  }
+  .inner::before {
+    display: block;
+  }
+  .inner {
+    width: 320px;
+    height: 520px;
+    border: solid black 1px;
+    padding: 5px;
+  }
+  .inner > img {
+    width: 90%;
+  }
+  #like {
+    z-index: 4;
+    text-align-last: right;
+    font-size: 40px;
+    margin-bottom: -50px;
+    font-weight: normal;
+  
+  }
+  #like:hover {
+    cursor: pointer;
+  }
+  .Rupee {
+    display: flex;
+  }
+  .Rupee > p {
+    text-decoration-line: line-through;
+  }
+  .Rupee > h1 {
+    line-height: 0px;
+  }
+  .inner > span ~ h3 {
+    line-height: 0px;
+  }
+  #hyt>img{
+      width: 250px;
+      height: 250px;
+  }
+  #hyt{
+      width: 300px;
+      height: 450px;
+      padding: 10px;
+      box-sizing: border-box;
+  }
+  #hyt>h3{
+      font-size:18px;     
+  }
+  #hyt>h2{
+     line-height: 0px;  
+     font-size: 17px;  
+  }
+  #hyt>span>span1{
+      font-size: 22px;
+  }
+  #hyt>span>span2{
+      text-decoration: line-through;
+      margin-left: 7px;
+  }
+  #PinCode{
+    text-align: right;
+    border-bottom: 0.5px solid gray;
+    margin-bottom: 10px;
+}
+#PinCode a{
+    text-decoration: none;
+    color: white;
+}
+#header{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    justify-content: center;
+    padding-bottom: 15px;
+    border-bottom: 0.5px solid gray;
+}
+#logo>img{
+    cursor: pointer;
+}
+#header>div:nth-child(2){
+    cursor: pointer;
+}
+#header>div span{
+    font-size: 20px;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+}
+#Pre_Options>span{
+    margin-left: 20px; cursor: pointer;
+}
+#Search_Inputs{
+    display: flex;
+    border: black 1px solid;
+    align-items: center;
+}
+#Search_Inputs >div> input{
+    width: 400px; border-radius: 8px 0px 0px 8px; border: 0px;
+    height: 31px; margin-top: -2px; cursor:text;
+}
+#Search_Inputs >div> button{
+    width: 40px; height: 33px; border: 0px;
+    border-radius: 0px 10px 10px 0px; margin-bottom: 2.5px;
+    background: cyan; color: black; margin-left: -1px;
+    font-size: 18px; font-weight: lighter; cursor: pointer; 
+}
+#Menu{
+    
+    z-index: 2;
+}
+#Cross{
+    
+    display: none;
+    z-index: 10;
+    margin-left: -70px;
+}
+#Category_Menu{
+   position: absolute;  
+   color: cyan;
+   background-color: black;
+}
+
+#Dis_Menu,#Category,#TVs_Show, #Home_Show,#Phone_Show,#Computers_Show,#Kitchen_Show,#Audio_Show,#Health_Show
+,#Grooming_Show,#Cameras_Show,#Smart_Show,#Gaming_Show,#Accessories_Show,#Brands_Show{
+    display: none;
+    
+}
+#Menu,#Dis_Cross,#Dis_Category,#Dis_Tv,#Dis_Home,#Dis_Phone,#Dis_Computer,#Dis_Kitchen
+,#Dis_Audio,#Dis_Health,#Dis_Grooming,#Dis_Cameras,#Dis_Smart
+,#Dis_Gaming,#Dis_Accessories,#Dis_Brand{
+  
+    display: block;
+}
+#Dis_Category{
+    z-index: 5;
+    display: inline-block;
+    padding: 20px 20px 20px 0px;
+    border: solid 1px blanchedalmond;
+    margin-left: 220px;
+}
+#Div_TVs,#Div_Home,#Div_Phone,#Div_Computers,#Div_Kitchen,#Div_Audio,#Div_Health,#Div_Grooming,#Div_Cameras
+,#Div_Smart,#Div_Gaming,#Div_Accessories,#Div_Brands{
+    position: absolute;
+    margin-left: 156px;
+    padding: 20px 20px 20px 0px;
+    border: blanchedalmond 1px solid;
+}
+#TVs:hover,#Home_Appliances:hover,#Phones:hover,#Computers:hover,#Kitchen:hover,#Audio:hover,#Health:hover
+,#Grooming:hover,#Cameras:hover,#Smart:hover,#Gaming:hover,#Accessories:hover,#Brands:hover
+{
+    cursor: pointer;
+    background-color: white;
+    color: rgb(2, 179, 179);
+}
+/* #TVs:hover #TVs_Show{
+    color: white;
+    display: block;
+} */
+
+#Div_TVs{margin-top: -45px;}
+#Div_Home{margin-top: -80px;}
+#Div_Phone{margin-top: -115px;}
+#Div_Computers{margin-top: -150px;}
+#Div_Kitchen{margin-top: -180px;}
+#Div_Audio{margin-top: -210px;}
+#Div_Health{margin-top: -240px;}
+#Div_Grooming{margin-top: -280px;}
+#Div_Cameras{margin-top: -310px;}
+#Div_Smart{margin-top: -345px;}
+#Div_Gaming{margin-top: -380px;}
+#Div_Accessories{margin-top: -420px;}
+#Div_Brands{margin-top: -450px;}
+#SignUp{
+    width: 27%;
+    height: 400px;
+    position: absolute;
+    background-color:rgb(26, 22, 22);
+    margin-left: 470px;
+    margin-top: 100px;
+    border: solid 1px gray;
+  text-align: center;
+ border-radius: 4px;
+  padding: 10px;
+  display: none;
+box-sizing: border-box;
+box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#Signin{
+    width: 27%;
+    height: 200px;
+    position: absolute;
+    background-color:rgb(26, 22, 22);
+    margin-left: 470px;
+    margin-top: 100px;
+    border: solid 1px gray;
+  text-align: center;
+ border-radius: 4px;
+  padding: 10px;
+  display: none;
+box-sizing: border-box;
+box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#form>input,#Signin>input{
+width: 90%;
+height: 40px;
+font-size: 18px;
+border-radius: 2px;
+margin: 4px;
+border: solid 1px gray;
+padding: 10px;
+box-sizing: border-box;
+background-color: black;
+color: white;
+}
+
+#div-sub,#div-sub1{
+display: flex;
+width: 90%;
+height: 40px;
+background-color: black;
+color: white;
+font-size: 20px;
+border-radius:4px ;
+border: 0;
+margin: 10px;
+justify-content: center;
+box-sizing: border-box;
+}
+#div-sub>button,#div-sub1>button{
+background-color: black;
+border: none;
+color: white;
+font-size: 16px;
+text-align: center;
+}
+#div-sub>div,#div-sub1>div{
+width: 20px;
+height: 20px;
+border-top: solid white;
+border-left: solid white;
+border-radius: 20px;
+margin-left: 5px;
+margin-top: 10px;
+animation: 0.4s infinite spinner ;
+display: none;
+}
+@keyframes spinner{
+0%{
+transform: rotate(0deg);
+}
+100%{
+transform: rotate(360deg);
+}
+}
+#submit,#submit1{
+display: flex;
+justify-content: center;
+padding: 10px;
+font-size: 20px;  
+}
+i{
+justify-items: right;
+}
+#SignUp>div,#Signin>div:nth-child(1){
+width: 100%;
+text-align: right;
+}
+
+/* productPage */
+#main{
+    width: 90%;
+    height: fit-content;
+    display: flex;
+    margin:auto;
+ }
+ #div1{
+     width: 10%;
+     height: fit-content;
+     box-sizing: border-box;
+ }
+ #div2{
+     width: 40%;
+     height: 430px;
+     margin: 20px;
+     border-radius: 10px;
+ }
+ #div3{
+     width: 60%;
+     height: fit-content;
+ }
+ #div1>div{
+     width: 110%;
+     height: 120px;
+     margin-top:20px;
+     border: 1px solid gray;   
+ }
+ #div3>div:nth-child(1){
+     width: 100%;
+     height: 100px;
+ }
+#price{
+  width: 90%;
+  height: 50px;
+  border-radius:7px ;
+  margin: 10px;
+  border: solid 1px gray;
+  padding: 7px;
+  box-sizing: border-box;
+ }
+ span1{
+     font-size: 23px;
+     margin-left: 15px;
+ }
+ span2{
+     font-size: 16px;
+     text-decoration: line-through;
+     margin-left: 15px;
+     margin-right: 20px;
+ }
+ #D3{
+     width: 100%;
+     height: fit-content;
+ }
+ i{
+     color: rgb(224, 220, 220);
+     font-size: 21px;
+     margin-right: 9px;
+ }
+ #D4{
+     width: 100%;
+     height: 60px;
+   display: flex;
+   margin-top: 20px;
+ }
+ #icici{
+     width: 120px;
+     height: 50px;
+     margin-right: 10px;
+     background-image: url("https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_40,w_40/v1605291841/Croma%20Assets/CMS/ICICI8975192358942.png/mxw_2048,f_auto");
+     background-size: cover;
+ }
+ #D5{
+     width: 100%;
+     height: fit-content;
+     border: 1px gray;
+     border-radius: 7px;
+ }
+ .inner1{
+     width: 100%;
+     display: flex;
+     margin-top: 10px;
+     
+ }
+ .inner1>div:nth-child(1){
+    width: 80%; 
+ }
+ .inner1>div:nth-child(2){
+    width: 20%;
+    text-align: end;
+ }
+ #buy{
+     width: 220px;
+     height: 40px;
+     background-color: rgb(66, 248, 194);
+     color: black; 
+     border-radius: 8px;
+     border:none;
+     font-weight: bold;
+     margin-top: 30px;
+     margin-right: 20px;
+  
+ }
+ #add{
+     width: 220px;
+     height: 40px;
+     background-color: black;
+     color: white;
+     border-radius: 8px;
+     border:none;
+     font-weight: bold;  
+     margin-top: 30px;
+     margin-right: 20px;
+   
+ }
+ .select{
+     width: 90%;
+     height: 70px;
+     font-size: 23px;
+     margin: 15px;
+     margin-left: 90px;
+     padding-left: 30px;
+     font-weight: bold;
+     background-color: rgb(15, 15, 15);
+     color: white;
+     border: gray 1px solid;
+     border-radius: 7px;
+ }
+ .check{
+     width: 22px;
+     height: 17px;
+     border: none;
+     background-color:  black;
+ }
+ span{
+     color: rgb(66, 248, 194);
+     text-decoration: underline;
+     margin-left: 5px;
+ }
+ #img1,#img2,#img3,#img4,#div2{
+     background-size: cover;
+ }
+ #span3{
+     font-size: 25px;
+     margin: 5px;
+     color: rgb(66, 248, 194);
+ }
+ a{
+   color: cyan;
+ }
+ #Pay{
+  width: 30%;
+  border: solid 1px rgb(65, 60, 60);
+  border-radius: 5px;
+  margin: auto;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: rgb(46, 42, 42);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#form1>input{
+  width: 90%;
+  height: 40px;
+  font-size: 18px;
+  border-radius: 4px;
+  margin: 2px;
+  border: solid 1px gray;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: black;
+  color: white;
+}
+label{
+  margin-left: 10px;
+}
+#div-su{
+  display: flex;
+  width: 90%;
+  height: 40px;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  border-radius:4px ;
+  border: 0;
+  margin: 10px;
+  justify-content: center;
+  box-sizing: border-box;
+}
+#div-su>button{
+background-color: black;
+border: none;
+color: white;
+}
+#div-su>div{
+  width: 20px;
+  height: 20px;
+  border-top: solid white;
+  border-left: solid white;
+  border-radius: 20px;
+  margin-left: 5px;
+  margin-top: 10px;
+  animation: 0.4s infinite spinner ;
+ display: none;
+}
+@keyframes spinner{
+  0%{
+      transform: rotate(0deg);
+  }
+  100%{
+      transform: rotate(360deg);
+  }
+}
+#submit12{
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  font-size: 20px;  
+}
+.color{
+color: red;
+}
+.py{
+  font-size: 60px;
+  margin-left: 35px;
+}
+
+
+/* checkout css */
+#total{
+  width: 80%;
+  height: 90px;
+  border-radius: 8px;
+  border: 1px solid gray;
+  margin: auto;
+  text-align: center;
+  margin-top: 52px;
+}
+#total>h1{
+  font-weight: normal;
+  font-size: 25px;
+}
+span5{
+  font-size: 30px;
+  margin-left: 10px;
+}
+#check_main{ 
+  display: flex;
+  width: 80%;
+  height: 400px;
+  border-radius: 8px;
+  margin: auto;
+  text-align: center;
+  margin-top: 30px;
+}
+#seeleft{
+  width: 70%;
+  height: 400px;
+}
+#seeright{
+  width: 30%;
+  height: 400px; 
+}
+#seeright>div{
+  width: 100%;
+  border:1px solid gray ;
+  border-radius: 8px;
+  height: fit-content;
+}
+.ino{
+  width: 100%;
+  display: flex;
+ padding: 10px;
+ box-sizing: border-box;
+}
+.ino>div:nth-child(1){
+  width: 70%;
+  height: 20px;
+  text-align: left;
+}
+.ino>div:nth-child(2){
+  width: 30%;
+  height: 20px;
+  text-align: right;
+}
+#seeleft>div{
+  display: flex;
+  width: 90%;
+  height: fit-content;
+  border: solid 1px gray;
+  border-radius: 8px;
+  margin: auto;
+  margin-top: 20px;
+}
+#seeleft>div>div:nth-child(1){
+  width: 20%;
+  height: 130px;
+  background-size: cover;
+  margin-top: 10px;
+ 
+}
+#seeleft>div>div:nth-child(2){
+  width:80%;
+  height: 150px;
+  text-align: left;
+}
+#seeleft>div>div:nth-child(2)>p{
+line-height: 0px;
+}
+#dele{
+  margin-top: 5px;
+  color: cyan;
+  font-size: 18px;
+}
+#checkout{
+  background-color: cyan;
+  width: 60%;
+  height: 30px;
+  border-radius: 9px;
+  border: 0px;
+  margin-bottom: 10px;
+  
+}
+#tota{
+  text-align: center;
+  line-height: 0px;
+  font-weight: normal;
+}
+  </style>
+</head>
+<body>
+    <div id="SignUp">
+        <div><i class="fas fa-times" onclick="close1()"></i></div>
+        <form id="form">
+            <input type="text" id="name1" placeholder="Enter Name"><br>
+            <input type="email" id="email" placeholder="Enter Email"><br>
+            <input type="password" id="pass" placeholder="Password"><br>
+            <input type="text" id="username" placeholder="Username"><br>
+            <input type="number" id="mobile" placeholder="Contact Number"><br>
+            <input type="text" id="description" placeholder="Description"><br>
+           <a href="/auth/google" style="color: wheat;text-decoration: none;">Continue With Google</a>//<a href="#" onclick="Sin()">Sign in</a>
+           <div id="div-sub"><button id="submit">Submit</button> <div id="pro"></div></div>
+        </form>
+    </div>
+    <div id="Signin">
+        <div><i class="fas fa-times" onclick="close2()"></i></div>
+        <input type="text" id="emailIn" placeholder="Email"><br>
+        <input type="password" id="passIn" placeholder="Password"><br>
+       <div id="div-sub1"><button id="submit1" onclick="SIgn()">Submit</button> <div id="pro1"></div></div>
+    </div>
+    <div id="PinCode">
+        <i class="fas fa-map-marker-alt"></i> PINCODE <a href="">415002 <i class="fas fa-edit"></i></a>
+    </div>
+    <div id="header">
+        <div id="logo">
+            <img src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://www.croma.com/assets/images/croma_logo_dark.png/mxw_160,f_auto">
+        </div>
+        <div>
+            <span id="Menu">&#8801; Menu</span>
+            <span id="Cross">&#10060; Menu</span>
+        </div>
+        <div id="Search_Inputs">
+            <div>
+                <input type="text" placeholder="What are you looking for?" id="input_search">
+            </div>
+            <div>
+                <button id="search_search"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+        <div id="Pre_Options">
+            <span>ORDERS</span>
+            <span id="Sign" onclick="Sign()">SIGN IN</span>
+            <span>|</span>
+            <span>
+                <i class="fas fa-shopping-cart"></i>
+                CART
+            </span>
+        </div>
+    </div>
+    <div id="Category_Menu" style="position: absolute; color: cyan; background-color: black;">
+        <li id="Category">SHOP BY CATEGORY
+            <ul id="TVs">Televisions & Accessories
+                    <ul id="TVs_Show">
+                        <div id="Div_TVs">
+                        <ul>LED TVs</ul><br>
+                        <ul>QLED TVs</ul><br>
+                        <ul>OLED TVs</ul><br>
+                        <ul>4K ultra HD TVs</ul><br>
+                        <ul>8K ultra HD TVs</ul><br>
+                        <ul>Smart TVs</ul><br>
+                        <ul>Full HD TVs</ul><br>
+                        <ul>HD Ready TVs</ul><br>
+                        <ul>Android Smart TVs</ul><br>
+                        <ul>Large Screen TVs</ul>
+                    </div>
+                    </ul>
+            </ul>
+            <ul id="Home_Appliances">Home Appliances
+                <ul id="Home_Show">
+                    <div id="Div_Home">
+                    <ul>Washing Machines & Dryers</ul><br>
+                    <ul>Front Load Washing Machines</ul><br>
+                    <ul>Top Load Washing Machines</ul><br>
+                    <ul>Rfigerators & Freezers</ul><br>
+                    <ul>Double/Tripple Door Refrigerator</ul><br>
+                    <ul>Ice Makers</ul><br>
+                    <ul>Air Conditioners</ul><br>
+                    <ul>Vacuum Cleaners</ul><br>
+                    <ul>Irons</ul><br>
+                    <ul>Home Safety Security</ul>
+                </div>
+                </ul>
+            </ul>
+            <ul id="Phones">Phones & Wearables
+                <ul id="Phone_Show">
+                    <div id="Div_Phone">
+                    <ul>Mobile Phones</ul><br>
+                    <ul>Android Phones</ul><br>
+                    <ul>iPhones</ul><br>
+                    <ul>Gaming Mobile Phones</ul><br>
+                    <ul>Wearables</ul><br>
+                    <ul>Smart Watches</ul><br>
+                    <ul>VR Headset</ul><br>
+                    <ul>Bluetooth Headphones</ul><br>
+                    <ul>Mobile Accessories</ul><br>
+                    <ul>Truly Wireless Earbuds</ul>
+                    </div>
+                </ul>
+            </ul>
+            <ul id="Computers">Computers & Tablets
+                <ul id="Computers_Show">
+                    <div id="Div_Computers">
+                    <ul>Laptops</ul><br>
+                    <ul>MacBooks</ul><br>
+                    <ul>Gaming Laptops</ul><br>
+                    <ul>Windows Laptops</ul><br>
+                    <ul>iPads</ul><br>
+                    <ul>Ultra Thin Laptops</ul><br>
+                    <ul>Digital Pads</ul><br>
+                    <ul>Inject Printers</ul><br>
+                    <ul>3D Printers & 3D Pens</ul><br>
+                    <ul>Pen Drives</ul>
+                    </div>
+                </ul>
+            </ul>
+            <ul id="Kitchen">Kitchen Appliances
+                <ul id="Kitchen_Show">
+                    <div id="Div_Kitchen">
+                    <ul>Dishwashers</ul><br>
+                    <ul>Microwave & Ovens</ul><br>
+                    <ul>Rice Cookers</ul><br>
+                    <ul>Coffee Makers</ul><br>
+                    <ul>Tea Makers</ul><br>
+                    <ul>Cooking Appliances</ul><br>
+                    <ul>Air Fryers</ul><br>
+                    <ul>Hobs</ul><br>
+                    <ul>Gas Stove</ul><br>
+                    <ul>Juicers & Blenders</ul>
+                    </div>
+                </ul>
+            </ul>
+            <ul id="Audio">Audio & Video
+                <ul id="Audio_Show">
+                    <div id="Div_Audio">
+                    <ul>Media Players</ul><br>
+                    <ul>Earphones</ul><br>
+                    <ul>Croma Media Players</ul><br>
+                    <ul>Speakers</ul><br>
+                    <ul>Smart Speakers</ul><br>
+                    <ul>Audio Accessories</ul><br>
+                    <ul>Ultra HD 4K Projectors</ul><br>
+                    <ul>Audio Cases & Covers</ul><br>
+                    <ul>Croma Speakers</ul><br>
+                    <ul>Other Audio Systems</ul>
+                </div>
+                </ul>
+            </ul>
+            <ul id="Health">Health & Fitness
+                <ul id="Health_Show">
+                    <div id="Div_Health">
+                    <ul>Health Care Products</ul><br>
+                    <ul>Massagers</ul><br>
+                    <ul>Weights & Scales</ul><br>
+                    <ul>Sanitization Products</ul><br>
+                    <ul>Nebulizers</ul><br>
+                    <ul>Hearing Aids</ul><br>
+                    <ul>Health Monitors</ul><br>
+                    <ul>Baby Care Products</ul><br>
+                    <ul>Fitness Equipments</ul><br>
+                    <ul>Covid-19 Essentials</ul>
+                </div>
+                </ul>
+            </ul>
+            <ul id="Grooming">Grooming & Personal Care
+                <ul id="Grooming_Show">
+                    <div id="Div_Grooming">
+                    <ul>Hair Care Products</ul><br>
+                    <ul>Hair Straightners</ul><br>
+                    <ul>Hair Dryers</ul><br>
+                    <ul>Hair Stylers</ul><br>
+                    <ul>Croma Hair Care Products</ul><br>
+                    <ul>Personal Grooming Products</ul><br>
+                    <ul>Epilators</ul><br>
+                    <ul>Trimmers</ul><br>
+                    <ul>Shavers</ul><br>
+                    <ul>Pet Care Products</ul>
+                </div>
+                </ul>
+            </ul>
+            <ul id="Cameras">Cameras & Accessories
+                <ul id="Cameras_Show">
+                    <div id="Div_Cameras">
+                    <ul>Point & Shoot Cameras</ul><br>
+                    <ul>Instant Cameras</ul><br>
+                    <ul>DSLR Cameras</ul><br>
+                    <ul>Mirrorless Cameras</ul><br>
+                    <ul>Camera Lens</ul><br>
+                    <ul>Camcorders</ul><br>
+                    <ul>Memmory Cards</ul><br>
+                    <ul>Camera Filters</ul><br>
+                    <ul>Photo Paper Sheets</ul><br>
+                    <ul>Camera Accessories</ul>
+                </div>
+                </ul>
+            </ul>
+            <ul id="Smart">Smart Devices
+                <ul id="Smart_Show">
+                    <div id="Div_Smart">
+                    <ul>Smart Kitchen Devices</ul><br>
+                    <ul>Smart Home Devices</ul><br>
+                    <ul>Smart Display</ul><br>
+                    <ul>Universal & Smart Remotes</ul><br>
+                    <ul>Smart TVs</ul><br>
+                    <ul>Smart ACs</ul><br>
+                    <ul>Smart Air Purifiers</ul><br>
+                    <ul>Smart Fans</ul><br>
+                    <ul>Smart Plugs</ul><br>
+                    <ul>Smart Work Devices</ul>
+                </div>
+                </ul>
+            </ul>
+            <ul id="Gaming">Gaming
+                <ul id="Gaming_Show">
+                    <div id="Div_Gaming">
+                    <ul>Gaming Consoles</ul><br>
+                    <ul>Gaming Laptops</ul><br>
+                    <ul>Gaming Softwares</ul><br>
+                    <ul>PlayStations Games</ul><br>
+                    <ul>Gaming Accessories</ul><br>
+                    <ul>Gaming Mice</ul><br>
+                    <ul>Electronic Toys</ul><br>
+                    <ul>Educationals Toys</ul><br>
+                    <ul>Robot Toys & Accessories</ul><br>
+                    <ul>Walkie Talkies</ul>
+                </div>
+                </ul>
+            </ul>
+            <ul id="Accessories">Accessories
+                <ul id="Accessories_Show">
+                    <div id="Div_Accessories">
+                    <ul>Traveller Accessories</ul><br>
+                    <ul>Smart Wallets</ul><br>
+                    <ul>Travel Bags</ul><br>
+                    <ul>Car Accessories</ul><br>
+                    <ul>Gift & Value Card</ul><br>
+                    <ul>TV Cables & Connectors</ul><br>
+                    <ul>Tablets Keyboards</ul><br>
+                    <ul>Battries & Charges</ul><br>
+                    <ul>Screen Protectors</ul><br>
+                    <ul>Laptops Webcams & Mice</ul>
+                </div>
+                </ul>
+            </ul>
+            <ul id="Brands">Top Brands
+                <ul id="Brands_Show">
+                    <div id="Div_Brands">
+                    <ul>Amazon</ul><br>
+                    <ul>Apple</ul><br>
+                    <ul>Bajaj</ul><br>
+                    <ul>Blue Star</ul><br>
+                    <ul>Boat</ul><br>
+                    <ul>Bosch</ul><br>
+                    <ul>Bose</ul><br>
+                    <ul>Canon</ul><br>
+                    <ul>Realme</ul><br>
+                    <ul>Samsung</ul>
+                </div>
+                </ul>
+            </ul>
+        </li>
+    </div>
+    <div id="Main_Page">
+        <di id="Back_Category">
+                <!-- External To Here --> 
+                <h1 id="ingo" style="text-align: center; font-size:60px ;"></h1>
+                <!-- External From Here -->
+            <div class="containerAXZ"> 
+               <div   class="main-carousel" id="mairousel" data-flickity='{"wrapAround": true, "autoPlay": true }' >
+              
+            </div>
+            </div>
+            <div class="Options">
+                <img class="OP_Img" src="https://media.croma.com/image/upload/v1630332530/Croma%20Assets/CMS/CAtegory/Mobile%20phone%20-%20C10/LP_MobileCategorypage-Headphones_Earphones_27Aug_rvcmsf.png">
+                <img class="OP_Img" src="https://media.croma.com/image/upload/v1630332530/Croma%20Assets/CMS/CAtegory/Mobile%20phone%20-%20C10/LP_MobileCategorypage-Cases_Covers_27Aug_ispl8x.png">
+                <img class="OP_Img" src="https://media.croma.com/image/upload/v1630332530/Croma%20Assets/CMS/CAtegory/Mobile%20phone%20-%20C10/LP_MobileCategorypage-Chargers_Adapters_27Aug_mj76cz.png">
+                <img class="OP_Img" src="https://media.croma.com/image/upload/v1627627399/Croma%20Assets/CMS/LP%20Page%20Banners/2021/PCP%20Mobile/MobileCategoryLandingPage-Power_Banks_30July_cxdvln.png">
+            </div>
+            <img class="One_Img" src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1626357128/Croma%20Assets/CMS/CAtegory/Mobile%20phone%20-%20C10/life_on_track_moe8qr.jpg/mxw_1440,f_auto">
+            <img class="One_Img" src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1625304267/Croma%20Assets/CMS/LP%20Page%20Banners/2021/PCP%20Mobile/Explore_the_range_zigybm.jpg/mxw_1440,f_auto">
+        
+            <div id="Final_Text">
+                <h2>Looking for a mobile phone? Need help to know what's best for you?</h2>
+                <p>With a wide range of gadgets available in the market, it often gets confusing to differentiate one product from its competitor or to choose one that best meets your requirements. This is where Croma steps in. At Croma, we take pride in helping you buy. It is our constant endeavour to understand your needs and to help you find the product best suited for You! Because, a purchase is just the first step to a relationship that will last for years to come.</p>
+                
+                <p>Talking about relationships, Croma has been in the business of selling Mobile phones for over a decade. Our expertise in the field of electronics stem from the fact that we have strong tie-ups and associations with a variety of OEMs like Apple, OnePlus, Samsung, Nokia, Sony, Huawei, Vivo, Xiaomi, Oppo, LG, and more, who are known for being the best mobile brands, not only in India but across the world. In fact, this strong association allows us to gather unique insights of what the market actually wants and hence we curate a wide range of products that are especially designed keeping our customers in mind. Owing to this, you can easily explore our vast catalogue and buy Mobile phones online, but we recommend it is best to experience them in store through one of our representatives to ensure you get the right one.</p>
+                
+                <h2>So, what makes Mobile phones so important?</h2>
+                <p>Phones have revolutionised the way we do things. One can hardly imagine living without them in the present age. The beloved phone that you have now, and the ones that are yet to come, offer a ton of benefits, among which includes connecting you to the world, keeping you updated with all the latest happenings. Smartphones are, as the name suggest, smart devices that are here to make your life simpler and easier. Smartphones show you time, date, calculate numbers, wake you up when you want them to, remind you of something important, and find location through the GPS navigation. They come with cameras so that you can click pictures and make videos that you can cherish later. To keep your boredom away, your phones can play audio and video, and be your e-book reader or your gaming device. The recorder in a phone provides another advantage of recording your own voice and also that of others.</p>
+                
+                <h2>All that is fine, but what about technology?</h2>
+                <p>From pressing on keys, we have moved to pressing the screen directly; we have seen the shift from MBs to GBs, from zero camera to five cameras, from a few megapixels to more than hundred megapixels, from simple calls and games to video calls and high-end gaming phones, from flip to foldable, the growth story of mobile phones has been phenomenal, and, of course, one can never know what marvels the future holds. Mobile technology has advanced drastically and it keeps on evolving. The future will bring enormous development in the telephony segment, and connection will become seamless like never before. Let’s understand a bit of the technology behind Mobile phones.</p>
+                
+                <p>Mobile phones are classified as Smartphones and Feature phones. smartphones have an operating system such as iOS, Android, and they usually have a touchscreen interface. They can connect you to the internet and provide the option to download apps. They are equipped with camera through which photos can be clicked and videos can be recorded, and they also offer storage space so that information can be saved. Smartphones have connectivity options like Bluetooth and Wi-Fi, and they also give an added advantage in the form of personal assistance like Google Assistant, Siri, Alexa, for our convenience. Smartphones can be secured with security features like pin, pattern, fingerprint and face lock. The latest smartphones come with foldable screens! A feature phone on the other hand is a simple phone that comes with button keys which people use mostly to make calls and, to some extent, to send messages.</p>
+                
+                <p>For the purpose of connection, phones use CDMA, GSM, LTE technologies. CDMA stands for Code Division Multiple Access; phones with this network come with built-in chip, which means there is no way of switching to any network other than the one which comes with the phone. GSM stands for Global System for Mobile communication; this is the network which is most popular throughout the world. The phones that supports GSM come with separate slot for inserting SIM card, and you can choose whichever network service provider you like. LTE (Long Term Evolution) is the 4G standard accepted globally, and most new phones utilize 4G for the transmission of data. The term VoLTE, that one often hears a phone supports, refers to Voice over Long Term Evolution which is a way of making calls by using data packet (data which is transmitted through the internet) instead of depending on traditional voice calls. VoLTE has made roaming call charges a thing of the past.</p>
+                
+                <p>Mobile communication standards are named as 1G, 2G, 3G and 4G. The G stands for generation, which is a way of identifying as well as marketing the service packages that are on offer. The era of 1G and 2G are gone. We are presently in the world of 3G and 4G. While 3G has data bandwidth of 2 Mbps – 21 Mbps, 4G has bandwidth of 2 Mbps – 1 Gbps. Each new generation gets better and brings in a faster and smoother way of communication. And as with any electronic devices, the new makes the old obsolete after a certain time. New phones have faster speed, better coverage and reliability. 5G is one such advancement in the mobile phone sphere. It is yet in its nascent stage, but it promises to change the way we communicate. If 4G network seems to do wonders for us, 5G would do ten times more wonders. Smartphones with 5G network would allow high speed and seamless internet connectivity which would particularly help in every real time applications, such as operating self-driving cars which requires a continuous stream of fast internet for receiving signals. Even though 4G provides us a good connection over the internet but it still stops working when you are at a certain place (such as when you are in a running train), with 5G such disturbances are supposed to be completely curtailed. Voice and video calls would be much better than it is at present.</p>
+                
+                <p>While there are a few operating systems, but let us save some time and only emphasize on two which are the most popular, namely Android and iOS. The operating system which is designed only for iPhone and other Apple devices such as iPad, iPod is called iOS. Android is an open-source platform (which allows third parties to use the interface) designed by the search engine giant Google. iPhones have better security features as compared to Android phones, BlackBerry phones, which are not many in the market (but available at Croma), used to have its own operating system but it now relies on Android.</p>
+                
+                <p>Other factors to consider while looking up for a phone are: Memory (the RAM and the internal memory; more the capacity, more the storage capacity; also, most phones come with expandable memory feature); chipset (such as Snapdragon by Qualcomm, Exynos by Samsung, Kirin by Huawei; the latest version of these chipsets provides a faster and smoother user experience); the camera (for instant click of those special moments); battery life which determines how many hours the battery of a phone will last; battery charging technology (such as Dash Charge and Warp Charge by OnePlus, Adaptive Fast Charging by Samsung; Oppo has shown the capability of charging its phone Reno Ace with VOOC technology from zero to 100 percent under 30 minutes). Mobile Phones are now aware of their environment; they have various kinds of sensors (like fingerprint, proximity, compass, etc.) which understands our commands, movements, gestures, and environmental conditions, and accordingly helps us achieve the desired outcome. The photographer in you would surely want a great camera in a phone that captures all the details and comes with good zooming ability, not just the rear camera but the selfie lover should also have a reason to feel good, thus a phone with great rear and front camera will do the trick. The display of new mobile phones are of extremely high quality, this makes watching videos and movies a joy. Smartphones nowadays support 2K and 4K displays, which are giving HD TVs a run for their money.</p>
+                
+                <p>Mobile accessories such as cases and covers, mobile chargers, USB cables and connectors, mobile anti-virus, and selfie sticks not only protect your mobile phones but also come handy in case of an emergency</p>
+                
+                <h2>So, which is the best mobile phone for you?</h2>
+                <p>Well, this is completely subjective to a person's taste, usage and preference. What may be best suited for one, may not actually be a wise choice for the other. Some may value  while some others may focus on features. Mobile phone manufacturers keep adding new and innovative features in mobile phones every year to enable a phone user to easily use apps to get their work done instead of a computer. The latest Smartphones come with a quad or octa core processor to give the user a seamless multitasking experience. The latest mobile phones offer powerful processors and amazing gaming experiences. These Smartphones have powerful GPUs for high-end gaming performance. Also, the latest smartphones have extremely good camera quality. Among the premium phones, Apple and Samsung have been running at the forefront for a while, but their phones are pretty expensive. OnePlus has gained smartphone users’ trust within a short span of time by offering beautifully designed phones with cutting-edge technology, and is surely giving a tough competition to both Apple and Samsung. Xiaomi, with its latest phones, is proving to be a flagship killer.</p>
+                
+                <p>Need more help in choosing the right mobile phone? Have a look at our mobile phone buying guide .</p>
+                
+                <h2>Thinking if you should buy Mobile phones online or from a Store?</h2>
+                <p>Honestly, as long as you know exactly what you want, you can either buy mobile phones online or visit a store to do so. At Croma, we try to ensure a seamless shopping experience - in-store, online or mobile. Among a flurry of benefits, we provide personalised exclusive offers, convenient EMI payment options, etc. Just in case you face any problem with your gadget. Also, while the mobile phone prices in India may vary from brand to brand and technology to feature, we strive hard to provide a wide catalogue of phones for every budget. After all, the core purpose of Croma is to convert each and every dream of our customers into reality.</p>
+                
+                <p>Croma offers an extensive array of protection, repair and maintenance plans for appliances and devices. To keep your electronics running for a longer time, it is a wise decision to explore and buy ZIP Services from Croma. For your mobile phone, you can consider getting Extended Warranty, Spills & Drop, Screen Protection, Device Secure and Device Secure Gold, and On Demand Repair services.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<!-- <script src="/js/home.js"></script> -->
+<script>
+ 
+document.getElementById('search_search').addEventListener('click',()=>{
+    let val=document.getElementById('input_search').value;
+    let search_url=`http://localhost:5555/Search?search=${val}`
+    sch()
+   async function sch()
+    {
+      let response=await fetch(search_url,{
+          method:"GET"
+      })
+      let data=await response.json()
+      localStorage.setItem("SEArch",JSON.stringify(data))
+      location.href="section"
+    }
+})
+
+   let data=JSON.parse(localStorage.getItem('SEArch'))
+   console.log(data)
+   if(data.length==0)
+   {
+       document.getElementById('ingo').innerHTML="Oops Not Found"
+   }
+  
+   display(data)
+    function display(data)
+    {
+        // {img1,name,price1,price2}
+        data.map((item)=>{
+            let main=document.getElementById('mairousel')
+             main.setAttribute('class',"main-carousel")
+            let Class=document.createElement('div')
+            Class.setAttribute("class","inner");
+            Class.setAttribute('class',"carousel-cell")
+            Class.id="hyt";
+            let div=document.createElement('div');
+            div.id="like";
+            div.innerHTML=`&#9825;`
+            div.addEventListener("click",()=>{
+                div.style.color="cyan"
+            })
+          let img=document.createElement('img')
+          img.src=item.image_url[0];
+          let Name=document.createElement('h3');
+          Name.textContent=item.name;
+          let span=document.createElement('span')
+          span.setAttribute('class',"Ruppe")
+          span.innerHTML=`<span1>₹${item.price[0]}</span1><span2>₹${item.price[1]}</span2>`;
+          let star=document.createElement('h2');
+          star.innerHTML='&#9733;&#9733;&#9733;&#9733;&#9734;';
+          let div2=document.createElement('div')
+          Class.append(div,img,Name,span,star);
+          main.append(Class)
+        })
+    }
+    document.getElementById('logo').addEventListener('click',()=>{
+    location.href='home.html';
+})
+
+
+</script>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/ea5026738a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/croma.css">
+</head>
+<body>
+    <div id="SignUp">
+        <div><i class="fas fa-times" onclick="close1()"></i></div>
+        <form id="form">
+            <input type="text" id="name1" placeholder="Enter Name"><br>
+            <input type="email" id="email" placeholder="Enter Email"><br>
+            <input type="password" id="pass" placeholder="Password"><br>
+            <input type="text" id="username" placeholder="Username"><br>
+            <input type="number" id="mobile" placeholder="Contact Number"><br>
+            <input type="text" id="description" placeholder="Description"><br>
+           <a href="/auth/google" style="color: wheat;text-decoration: none;">Continue With Google</a>//<a href="#" onclick="Sin()">Sign in</a>
+           <div id="div-sub"><button id="submit">Submit</button> <div id="pro"></div></div>
+        </form>
+    </div>
+    <div id="Signin">
+        <div><i class="fas fa-times" onclick="close2()"></i></div>
+        <input type="text" id="emailIn" placeholder="Email"><br>
+        <input type="password" id="passIn" placeholder="Password"><br>
+       <div id="div-sub1"><button id="submit1" onclick="SIgn()">Submit</button> <div id="pro1"></div></div>
+    </div>
+    <div id="PinCode">
+        <i class="fas fa-map-marker-alt"></i> PINCODE <a href="">415002 <i class="fas fa-edit"></i></a>
+    </div>
+    <div id="header">
+        <div id="logo">
+            <img src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://www.croma.com/assets/images/croma_logo_dark.png/mxw_160,f_auto">
+        </div>
+        <div>
+            <span id="Menu">&#8801; Menu</span>
+            <span id="Cross">&#10060; Menu</span>
+        </div>
+        <div id="Search_Inputs">
+            <div>
+                <input type="text" placeholder="What are you looking for?">
+            </div>
+            <div>
+                <button><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+        <div id="Pre_Options">
+            <span>ORDERS</span>
+            <span id="Sign" onclick="Sign()">SIGN IN</span>
+            <span>|</span>
+            <span>
+                <i class="fas fa-shopping-cart"></i>
+                CART
+            </span>
+        </div>
+    </div>
+   
+    <% let sum=0 %>
+    <% let count=0 %>
+    <% items.map((product)=>{ %>
+        <% sum+=product.price[0] %>
+        <% count++%>
+    <% }) %>
+    
+    <div id="Nav_Bar"></div>
+    <div id="total"><h1>Your Cart-(items-<%=count%>)<span5>₹<%=sum%></span5></h1></div>
+    <div id="check_main">
+        <div id="seeleft">
+            <% items.map((product)=>{ %>
+                <div>
+                    <div style="background-image: url(<%=product.image_url[0]%>);"></div>
+                    <div><h3><%=product.name%></h3><p>Product Id: 245383</p><span1><%=product.price[0]%></span1><span2><%=product.price[1]%></span2></div>
+                    <div><i class="far fa-trash-alt" id="dele" onclick="Delete('<%= product._id%>')"></i></div>
+                </div>
+
+            <% }) %>
+          
+          
+        </div>
+        <div id="seeright">
+            <div>
+                <h2>Payment Details</h2>
+                <div class="ino">
+                    <div>item total</div>
+                    <div id="totaL">₹<%=sum%></div>
+                </div>
+                <div class="ino">
+                    <div>Delivery cost at 110088</div>
+                    <div>Free</div>
+                </div>
+                <div class="ino">
+                    <div>Total Price</div>
+                    <div id="total2">₹<%=sum%></div>
+                </div>
+                <button id="checkout"> <a href="/cromaPay" style="color: black; text-decoration: none;">CHECKOUT</a></button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="/js/checkout.js"></script>
+<script src="/js/home.js"></script>

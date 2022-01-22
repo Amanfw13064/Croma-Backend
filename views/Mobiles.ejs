@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <link rel="stylesheet" href="css/croma.css">
+  <script src="https://kit.fontawesome.com/ea5026738a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="SignUp">
+        <div><i class="fas fa-times" onclick="close1()"></i></div>
+        <form id="form">
+            <input type="text" id="name1" placeholder="Enter Name"><br>
+            <input type="email" id="email" placeholder="Enter Email"><br>
+            <input type="password" id="pass" placeholder="Password"><br>
+            <input type="text" id="username" placeholder="Username"><br>
+            <input type="number" id="mobile" placeholder="Contact Number"><br>
+            <input type="text" id="description" placeholder="Description"><br>
+           <a href="/auth/google" style="color: wheat;text-decoration: none;">Continue With Google</a>//<a href="#" onclick="Sin()">Sign in</a>
+           <div id="div-sub"><button id="submit">Submit</button> <div id="pro"></div></div>
+        </form>
+    </div>
+    <div id="Signin">
+        <div><i class="fas fa-times" onclick="close2()"></i></div>
+        <input type="text" id="emailIn" placeholder="Email"><br>
+        <input type="password" id="passIn" placeholder="Password"><br>
+       <div id="div-sub1"><button id="submit1" onclick="SIgn()">Submit</button> <div id="pro1"></div></div>
+    </div>
+    <div id="PinCode">
+        <i class="fas fa-map-marker-alt"></i> PINCODE <a href="">415002 <i class="fas fa-edit"></i></a>
+    </div>
+    <div id="header">
+        <div id="logo">
+            <img src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://www.croma.com/assets/images/croma_logo_dark.png/mxw_160,f_auto">
+        </div>
+        <div>
+            <span id="Menu">&#8801; Menu</span>
+            <span id="Cross">&#10060; Menu</span>
+        </div>
+        <div id="Search_Inputs">
+            <div>
+                <input type="text" placeholder="What are you looking for?" id="input_search">
+            </div>
+            <div>
+                <button id="search_search"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+        <div id="Pre_Options">
+            <span>ORDERS</span>
+            <span id="Sign" onclick="Sign()">SIGN IN</span>
+            <span>|</span>
+            <span>
+                <i class="fas fa-shopping-cart"></i>
+                CART
+            </span>
+        </div>
+    </div>
+    <div id="Category_Menu" style="position: absolute; color: cyan; background-color: black;">
+        <li id="Category">SHOP BY CATEGORY
+            <ul id="TVs">Televisions & Accessories
+                    <ul id="TVs_Show">
+                        <div id="Div_TVs">
+                        <ul>LED TVs</ul><br>
+                        <ul>QLED TVs</ul><br>
+                        <ul>OLED TVs</ul><br>
+                        <ul>4K ultra HD TVs</ul><br>
+                        <ul>8K ultra HD TVs</ul><br>
+                        <ul>Smart TVs</ul><br>
+                        <ul>Full HD TVs</ul><br>
+                        <ul>HD Ready TVs</ul><br>
+                        <ul>Android Smart TVs</ul><br>
+                        <ul>Large Screen TVs</ul>
+                    </div>
+                    </ul>
+            </ul>
+            <ul id="Home_Appliances">Home Appliances
+                <ul id="Home_Show">
+                    <div id="Div_Home">
+                    <ul>Washing Machines & Dryers</ul><br>
+                    <ul>Front Load Washing Machines</ul><br>
+                    <ul>Top Load Washing Machines</ul><br>
+                    <ul>Rfigerators & Freezers</ul><br>
+                    <ul>Double/Tripple Door Refrigerator</ul><br>
+                    <ul>Ice Makers</ul><br>
+                    <ul>Air Conditioners</ul><br>
+                    <ul>Vacuum Cleaners</ul><br>
+                    <ul>Irons</ul><br>
+                    <ul>Home Safety Security</ul>
+                </div>
+                </ul>
+            </ul>
+            <ul id="Phones">Phones & Wearables
+                <ul id="Phone_Show">
+                    <div id="Div_Phone">
+                    <ul>Mobile Phones</ul><br>
+                    <ul>Android Phones</ul><br>
+                    <ul>iPhones</ul><br>
+                    <ul>Gaming Mobile Phones</ul><br>
+                    <ul>Wearables</ul><br>
+                    <ul>Smart Watches</ul><br>
+                    <ul>VR Headset</ul><br>
+                    <ul>Bluetooth Headphones</ul><br>
+                    <ul>Mobile Accessories</ul><br>
+                    <ul>Truly Wireless Earbuds</ul>
+                    </div>
+                </ul>
+            </ul>
+            <ul id="Computers">Computers & Tablets
+                <ul id="Computers_Show">
+                    <div id="Div_Computers">
+                    <ul>Laptops</ul><br>
+                    <ul>MacBooks</ul><br>
+                    <ul>Gaming Laptops</ul><br>
+                    <ul>Windows Laptops</ul><br>
+                    <ul>iPads</ul><br>
+                    <ul>Ultra Thin Laptops</ul><br>
+                    <ul>Digital Pads</ul><br>
+                    <ul>Inject Printers</ul><br>
+                    <ul>3D Printers & 3D Pens</ul><br>
+                    <ul>Pen Drives</ul>
+                    </div>
+                </ul>
+            </ul>
+            <ul id="Kitchen">Kitchen Appliances
+                <ul id="Kitchen_Show">
+                    <div id="Div_Kitchen">
+                    <ul>Dishwashers</ul><br>
+                    <ul>Microwave & Ovens</ul><br>
+                    <ul>Rice Cookers</ul><br>
+                    <ul>Coffee Makers</ul><br>
+                    <ul>Tea Makers</ul><br>
+                    <ul>Cooking Appliances</ul><br>
+                    <ul>Air Fryers</ul><br>
+                    <ul>Hobs</ul><br>
+                    <ul>Gas Stove</ul><br>
+                    <ul>Juicers & Blenders</ul>
+                    </div>
+                </ul>
+            </ul>
+            <ul id="Audio">Audio & Video
+                <ul id="Audio_Show">
+                    <div id="Div_Audio">
+                    <ul>Media Players</ul><br>
+                    <ul>Earphones</ul><br>
+                    <ul>Croma Media Players</ul><br>
+                    <ul>Speakers</ul><br>
+                    <ul>Smart Speakers</ul><br>
+                    <ul>Audio Accessories</ul><br>
+                    <ul>Ultra HD 4K Projectors</ul><br>
+                    <ul>Audio Cases & Covers</ul><br>
+                    <ul>Croma Speakers</ul><br>
+                    <ul>Other Audio Systems</ul>
+                </div>
+                </ul>
+            </ul>
+            <ul id="Health">Health & Fitness
+                <ul id="Health_Show">
+                    <div id="Div_Health">
+                    <ul>Health Care Products</ul><br>
+                    <ul>Massagers</ul><br>
+                    <ul>Weights & Scales</ul><br>
+                    <ul>Sanitization Products</ul><br>
+                    <ul>Nebulizers</ul><br>
+                    <ul>Hearing Aids</ul><br>
+                    <ul>Health Monitors</ul><br>
+                    <ul>Baby Care Products</ul><br>
+                    <ul>Fitness Equipments</ul><br>
+                    <ul>Covid-19 Essentials</ul>
+                </div>
+                </ul>
+            </ul>
+            <ul id="Grooming">Grooming & Personal Care
+                <ul id="Grooming_Show">
+                    <div id="Div_Grooming">
+                    <ul>Hair Care Products</ul><br>
+                    <ul>Hair Straightners</ul><br>
+                    <ul>Hair Dryers</ul><br>
+                    <ul>Hair Stylers</ul><br>
+                    <ul>Croma Hair Care Products</ul><br>
+                    <ul>Personal Grooming Products</ul><br>
+                    <ul>Epilators</ul><br>
+                    <ul>Trimmers</ul><br>
+                    <ul>Shavers</ul><br>
+                    <ul>Pet Care Products</ul>
+                </div>
+                </ul>
+            </ul>
+            <ul id="Cameras">Cameras & Accessories
+                <ul id="Cameras_Show">
+                    <div id="Div_Cameras">
+                    <ul>Point & Shoot Cameras</ul><br>
+                    <ul>Instant Cameras</ul><br>
+                    <ul>DSLR Cameras</ul><br>
+                    <ul>Mirrorless Cameras</ul><br>
+                    <ul>Camera Lens</ul><br>
+                    <ul>Camcorders</ul><br>
+                    <ul>Memmory Cards</ul><br>
+                    <ul>Camera Filters</ul><br>
+                    <ul>Photo Paper Sheets</ul><br>
+                    <ul>Camera Accessories</ul>
+                </div>
+                </ul>
+            </ul>
+            <ul id="Smart">Smart Devices
+                <ul id="Smart_Show">
+                    <div id="Div_Smart">
+                    <ul>Smart Kitchen Devices</ul><br>
+                    <ul>Smart Home Devices</ul><br>
+                    <ul>Smart Display</ul><br>
+                    <ul>Universal & Smart Remotes</ul><br>
+                    <ul>Smart TVs</ul><br>
+                    <ul>Smart ACs</ul><br>
+                    <ul>Smart Air Purifiers</ul><br>
+                    <ul>Smart Fans</ul><br>
+                    <ul>Smart Plugs</ul><br>
+                    <ul>Smart Work Devices</ul>
+                </div>
+                </ul>
+            </ul>
+            <ul id="Gaming">Gaming
+                <ul id="Gaming_Show">
+                    <div id="Div_Gaming">
+                    <ul>Gaming Consoles</ul><br>
+                    <ul>Gaming Laptops</ul><br>
+                    <ul>Gaming Softwares</ul><br>
+                    <ul>PlayStations Games</ul><br>
+                    <ul>Gaming Accessories</ul><br>
+                    <ul>Gaming Mice</ul><br>
+                    <ul>Electronic Toys</ul><br>
+                    <ul>Educationals Toys</ul><br>
+                    <ul>Robot Toys & Accessories</ul><br>
+                    <ul>Walkie Talkies</ul>
+                </div>
+                </ul>
+            </ul>
+            <ul id="Accessories">Accessories
+                <ul id="Accessories_Show">
+                    <div id="Div_Accessories">
+                    <ul>Traveller Accessories</ul><br>
+                    <ul>Smart Wallets</ul><br>
+                    <ul>Travel Bags</ul><br>
+                    <ul>Car Accessories</ul><br>
+                    <ul>Gift & Value Card</ul><br>
+                    <ul>TV Cables & Connectors</ul><br>
+                    <ul>Tablets Keyboards</ul><br>
+                    <ul>Battries & Charges</ul><br>
+                    <ul>Screen Protectors</ul><br>
+                    <ul>Laptops Webcams & Mice</ul>
+                </div>
+                </ul>
+            </ul>
+            <ul id="Brands">Top Brands
+                <ul id="Brands_Show">
+                    <div id="Div_Brands">
+                    <ul>Amazon</ul><br>
+                    <ul>Apple</ul><br>
+                    <ul>Bajaj</ul><br>
+                    <ul>Blue Star</ul><br>
+                    <ul>Boat</ul><br>
+                    <ul>Bosch</ul><br>
+                    <ul>Bose</ul><br>
+                    <ul>Canon</ul><br>
+                    <ul>Realme</ul><br>
+                    <ul>Samsung</ul>
+                </div>
+                </ul>
+            </ul>
+        </li>
+    </div>
+    <div id="Main_Page">
+        <di id="Back_Category">
+            <div class="OP_Text">
+                <span><a href="/">Croma</a>&ensp; > &ensp;</span>
+                <span><a href="/">Phones & Wearables</a>&ensp; > &ensp;</span>
+                <span>Mobile Phones</span><br>
+                <h2>Mobile Phones</h2>
+            </div>
+            <div class="Options" id="For_Below">
+                <img class="OP_Img" src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1625301728/Croma%20Assets/CMS/LP%20Page%20Banners/2021/PCP%20Mobile/New_scwunn.jpg/mxw_1440,f_auto">
+                <img class="OP_Img" src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1625561994/Croma%20Assets/CMS/LP%20Page%20Banners/2021/PCP%20Mobile/Popular_6July_hgjxqb.jpg/mxw_1440,f_auto">
+                <img class="OP_Img" src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1625561994/Croma%20Assets/CMS/LP%20Page%20Banners/2021/PCP%20Mobile/HotDeals_6July_ohu9jg.jpg/mxw_1440,f_auto">
+                <img class="OP_Img" src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1625301728/Croma%20Assets/CMS/LP%20Page%20Banners/2021/PCP%20Mobile/Deal_Junction_copy_to1tlz.jpg/mxw_1440,f_auto">
+            </div>
+                <!-- External from here -->
+            <div id="containerAX">
+                <div class="main-carousel" data-flickity='{"wrapAround": true, "autoPlay": true }'>
+                    <div class="Move_Op" class="carousel-cell">
+                        <img class="Moving_OP" src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1632451833/Croma%20Assets/CMS/Homepage%20Banners/Homepage%20Rotating%20Banner%20Video/HP_iphone13_series_withHDFC_23sept_dvgvuj.jpg/mxw_1440,f_auto">
+                    </div>
+                    <div class="Move_Op" class="carousel-cell">
+                        <img class="Moving_OP" src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1638894963/Croma%20Assets/CMS/CAtegory/Mobile%20phone%20-%20C10/HP_OPNord2-5G-HDFCbank_7Dec_lyriup.jpg/mxw_1440,f_auto">
+                    </div>
+                    <div class="Move_Op" class="carousel-cell">
+                        <img class="Moving_OP" src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1628237569/Croma%20Assets/CMS/LP%20Page%20Banners/2021/PCP%20Mobile/MobileCPC-HeaderBanners_06Aug_vuuoxb.jpg/mxw_1440,f_auto">
+                    </div>
+                    <div class="Move_Op" class="carousel-cell">
+                        <img class="Moving_OP" src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1632897669/Croma%20Assets/CMS/Homepage%20Banners/HP%20Rotating/2021/HP_Oppo-F19s_29Sept_ndyszd.jpg/mxw_1440,f_auto">
+                    </div>
+                    <div class="Move_Op" class="carousel-cell">
+                        <img class="Moving_OP" src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1633687148/Croma%20Assets/CMS/Homepage%20Banners/Homepage%20Rotating%20Banner%20Video/HP_X70-Series-5G_08-Oct_ibv4yx.jpg/mxw_1440,f_auto">
+                    </div>
+                    <div class="Move_Op" class="carousel-cell">
+                        <img class="Moving_OP" src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1632481194/Croma%20Assets/CMS/Brand%20Page%20Banners/2021/Apple/HP_GOP-iPhone12mini_24Sep_i9rpa2.jpg/mxw_1440,f_auto">
+                    </div>
+                </div>
+            </div>
+                <!-- External to here -->
+            <div class="OP_Text">
+                <h2>Croma Advantages</h2>
+            </div>
+            <div class="Options">
+                <img class="OP_Img" src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1625302573/Croma%20Assets/CMS/LP%20Page%20Banners/2021/PCP%20Mobile/Weekly_Offer_qunqie.jpg/mxw_1440,f_auto">
+                <img class="OP_Img" src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1625302573/Croma%20Assets/CMS/LP%20Page%20Banners/2021/PCP%20Mobile/1_el3eld.jpg/mxw_1440,f_auto">
+                <img class="OP_Img" src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1625302573/Croma%20Assets/CMS/LP%20Page%20Banners/2021/PCP%20Mobile/2_tyrhs6.jpg/mxw_1440,f_auto">
+                <img class="OP_Img" src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1625302573/Croma%20Assets/CMS/LP%20Page%20Banners/2021/PCP%20Mobile/Group_5_pdzhkv.jpg/mxw_1440,f_auto">
+            </div>
+
+            <div class="Options">
+                <img class="Confuse" src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1638895198/Croma%20Assets/CMS/CAtegory/Mobile%20phone%20-%20C10/LP_2Split_PCP_BuyingGuide_7Dec-1_p1rrsc.png/mxw_1440,f_auto">
+                <img class="Confuse" src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1638895199/Croma%20Assets/CMS/CAtegory/Mobile%20phone%20-%20C10/LP_2Split_PCP_BuyingGuide_7Dec-2_ayym4i.png/mxw_1440,f_auto">
+            </div>
+            <img class="One_Img" src="https://media.croma.com/image/upload/v1638895971/Croma%20Assets/CMS/CAtegory/Mobile%20phone%20-%20C10/LP-Strip_SamsungZFold3_7Dec_oaoykg.png">
+
+            <div class="Options">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/9w0dcd6BZRo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/a2CWNdq8rjc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="OP_Text">
+                <h2>Shop By Price</h2>
+            </div>
+                <!-- External From Here -->
+                <div class="containerAXZ">
+                    <div class="main-carousel" data-flickity='{"wrapAround": true, "autoPlay": true }'>
+                        <div class="Price_Sort" class="carousel-cell">
+                            <img class="Moving_OP" src="https://media.croma.com/image/upload/v1638895486/Croma%20Assets/CMS/CAtegory/Mobile%20phone%20-%20C10/LP_PCP_ShopByPrice_7Dec-1_sxhj4w.png">
+                        </div>
+                        <div class="Price_Sort" class="carousel-cell">
+                            <img class="Moving_OP" src="https://media.croma.com/image/upload/v1638895487/Croma%20Assets/CMS/CAtegory/Mobile%20phone%20-%20C10/LP_PCP_ShopByPrice_7Dec-2_o8kayl.png">
+                        </div>
+                        <div class="Price_Sort" class="carousel-cell">
+                            <img class="Moving_OP" src="https://media.croma.com/image/upload/v1638895488/Croma%20Assets/CMS/CAtegory/Mobile%20phone%20-%20C10/LP_PCP_ShopByPrice_7Dec-3_t1qerd.png">
+                        </div>
+                        <div class="Price_Sort" class="carousel-cell">
+                            <img class="Moving_OP" src="https://media.croma.com/image/upload/v1638895487/Croma%20Assets/CMS/CAtegory/Mobile%20phone%20-%20C10/LP_PCP_ShopByPrice_7Dec-4_nrdelk.png">
+                        </div>
+                        <div class="Price_Sort" class="carousel-cell">
+                            <img class="Moving_OP" src="https://media.croma.com/image/upload/v1638895487/Croma%20Assets/CMS/CAtegory/Mobile%20phone%20-%20C10/LP_PCP_ShopByPrice_7Dec-5_evauyb.png">
+                        </div>
+                        <div class="Price_Sort" class="carousel-cell">
+                            <img class="Moving_OP" src="https://media.croma.com/image/upload/v1638895486/Croma%20Assets/CMS/CAtegory/Mobile%20phone%20-%20C10/LP_PCP_ShopByPrice_7Dec-6_ptddpc.png">
+                        </div>
+                      </div>
+                </div>
+                <!-- External To Here --> 
+                <!-- External From Here -->
+            <div class="containerAXZ">
+               <div   class="main-carousel" id="mairousel" data-flickity='{"wrapAround": true, "autoPlay": true }' >
+                <% items3.forEach((product)=>{ %>
+                    <a href="/Home/<%= product._id%>/productInfo" style="font-size: 10px;text-decoration: none;">
+                    <div id="hyt" class="inner carousel-cell">
+                    <div id="like" style="color: wheat;">&#9825;</div>
+                    <img src="<%= product.image_url[0]%>" alt="">
+                     <h3 style="color: white;"><%= product.name%></h3>
+                     <span class="Ruppe"><span1 style="color: white;">₹<%= product.price[0]%></span1><span2 style="font-size: 18px;">₹<%= product.price[1]%></span2></span>
+                    <h2 style="font-size: 20px;">&#9733;&#9733;&#9733;&#9733;&#9734;</h2>
+                  </div> </a>
+                  <% })%>
+            </div>
+            </div>
+            <!-- External To Here -->
+
+            <div class="OP_Text">
+                <h2>Shop By Features</h2>
+            </div>
+            <div class="Options">
+                <img class="OP_Img" src="https://media.croma.com/image/upload/v1625303703/Croma%20Assets/CMS/LP%20Page%20Banners/2021/PCP%20Mobile/223_h2rymp.jpg">
+                <img class="OP_Img" src="https://media.croma.com/image/upload/v1625303703/Croma%20Assets/CMS/LP%20Page%20Banners/2021/PCP%20Mobile/22121_rsrtec.jpg">
+                <img class="OP_Img" src="https://media.croma.com/image/upload/v1625303703/Croma%20Assets/CMS/LP%20Page%20Banners/2021/PCP%20Mobile/22111_tja1kk.jpg">
+                <img class="OP_Img" src="https://media.croma.com/image/upload/v1625303718/Croma%20Assets/CMS/LP%20Page%20Banners/2021/PCP%20Mobile/Layer_2_hhwrf0.jpg">
+            </div>
+
+            <div class="OP_Text">
+                <h2>Shop By Brands</h2>
+            </div>
+
+            <!-- External From Here -->
+            <div class="containerAXZ">
+                <div class="main-carousel" data-flickity='{"wrapAround": true, "autoPlay": true }'>
+                    <div class="Brand_Sort" class="carousel-cell">
+                        <img class="Moving_OP" src="https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg/v1612344912/Croma%20Assets/CMS/PreProd2/PCP%20Mobile/apple_g5w1qx.png">
+                    </div>
+                    <div class="Brand_Sort" class="carousel-cell">
+                        <img class="Moving_OP" src="https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg/v1612344913/Croma%20Assets/CMS/PreProd2/PCP%20Mobile/samsung_zzkbnl.png">
+                    </div>
+                    <div class="Brand_Sort" class="carousel-cell">
+                        <img class="Moving_OP" src="https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg/v1612344913/Croma%20Assets/CMS/PreProd2/PCP%20Mobile/vivo_fsifcu.png">
+                    </div>
+                    <div class="Brand_Sort" class="carousel-cell">
+                        <img class="Moving_OP" src="https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg/v1612344912/Croma%20Assets/CMS/PreProd2/PCP%20Mobile/oneplus_nirtby.png">
+                    </div>
+                    <div class="Brand_Sort" class="carousel-cell">
+                        <img class="Moving_OP" src="https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg/v1612344912/Croma%20Assets/CMS/PreProd2/PCP%20Mobile/oppo_wutczx.png">
+                    </div>
+                    <div class="Brand_Sort" class="carousel-cell">
+                        <img class="Moving_OP" src="https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg/v1612344912/Croma%20Assets/CMS/PreProd2/PCP%20Mobile/realme_lv14b1.png">
+                    </div>
+                    <div class="Brand_Sort" class="carousel-cell">
+                        <img class="Moving_OP" src="https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg/v1612344913/Croma%20Assets/CMS/PreProd2/PCP%20Mobile/nokia_vvhufb.png">
+                    </div>
+                  </div>
+            </div>
+
+            <!-- External To Here -->
+
+            <div class="Options">
+                <img class="OP_Img" src="https://media.croma.com/image/upload/v1625303296/Croma%20Assets/CMS/LP%20Page%20Banners/2021/PCP%20Mobile/Iphone_11_mcsiah.jpg">
+                <img class="OP_Img" src="https://media.croma.com/image/upload/v1625303297/Croma%20Assets/CMS/LP%20Page%20Banners/2021/PCP%20Mobile/Iphone_12_series_dossj6.jpg">
+                <img class="OP_Img" src="https://media.croma.com/image/upload/v1625303296/Croma%20Assets/CMS/LP%20Page%20Banners/2021/PCP%20Mobile/Airpods_tg7adl.jpg">
+                <img class="OP_Img" src="https://media.croma.com/image/upload/v1626083216/Croma%20Assets/CMS/LP%20Page%20Banners/2021/PCP%20Mobile/Accessories_12July_szxcqw.jpg">
+            </div>
+            <div class="Options">
+                <img class="Confuse" src="https://media.croma.com/image/upload/v1638895355/Croma%20Assets/CMS/CAtegory/Mobile%20phone%20-%20C10/LP_PCP_2Split_OppoAd_7Dec_rttisg.png">
+                <img class="Confuse" src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1638895359/Croma%20Assets/CMS/CAtegory/Mobile%20phone%20-%20C10/LP_PCP_2Split_VivoAd_7Dec_pmgqzc.png/mxw_1440,f_auto">
+            </div>
+
+            
+            <div class="OP_Text">
+                <h2>Popular Smartphones</h2>
+            </div>
+            <!-- External From Here -->
+            <div class="containerAXZ">
+                <div   class="main-carousel" id="mairouse" data-flickity='{"wrapAround": true, "autoPlay": true }' >
+                    <% items.forEach((product)=>{ %>
+                        <a href="/Home/<%= product._id%>/productInfo" style="font-size: 10px;text-decoration: none;">
+                        <div id="hyt" class="inner carousel-cell">
+                        <div id="like" style="color: wheat;">&#9825;</div>
+                        <img src="<%= product.image_url[0]%>" alt="">
+                         <h3 style="color: white;"><%= product.name%></h3>
+                         <span class="Ruppe"><span1 style="color: white;">₹<%= product.price[0]%></span1><span2 style="font-size: 18px;">₹<%= product.price[1]%></span2></span>
+                        <h2 style="font-size: 20px;">&#9733;&#9733;&#9733;&#9733;&#9734;</h2>
+                      </div> </a>
+                      <% })%>
+                   </div> 
+             </div>
+            
+            <!-- External To Here -->
+
+            <div class="OP_Text">
+                <h2>Limited Timme Deals</h2>
+            </div>
+            <div class="containerAXZ">
+                <div  class="main-carousel" id="mairous" data-flickity='{"wrapAround": true, "autoPlay": true }' >
+                    <% items2.forEach((product)=>{ %>
+                        <a href="/Home/<%= product._id%>/productInfo" style="font-size: 10px;text-decoration: none;">
+                        <div id="hyt" class="inner carousel-cell">
+                        <div id="like" style="color: wheat;">&#9825;</div>
+                        <img src="<%= product.image_url[0]%>" alt="">
+                         <h3 style="color: white;"><%= product.name%></h3>
+                         <span class="Ruppe"><span1 style="color: white;">₹<%= product.price[0]%></span1><span2 style="font-size: 18px;">₹<%= product.price[1]%></span2></span>
+                        <h2 style="font-size: 20px;">&#9733;&#9733;&#9733;&#9733;&#9734;</h2>
+                      </div> </a>
+                      <% })%>
+                   </div> 
+             </div>
+
+            <!-- check This -->
+
+            <div class="Options">
+                <img class="OP_Img" src="https://media.croma.com/image/upload/v1630332530/Croma%20Assets/CMS/CAtegory/Mobile%20phone%20-%20C10/LP_MobileCategorypage-Headphones_Earphones_27Aug_rvcmsf.png">
+                <img class="OP_Img" src="https://media.croma.com/image/upload/v1630332530/Croma%20Assets/CMS/CAtegory/Mobile%20phone%20-%20C10/LP_MobileCategorypage-Cases_Covers_27Aug_ispl8x.png">
+                <img class="OP_Img" src="https://media.croma.com/image/upload/v1630332530/Croma%20Assets/CMS/CAtegory/Mobile%20phone%20-%20C10/LP_MobileCategorypage-Chargers_Adapters_27Aug_mj76cz.png">
+                <img class="OP_Img" src="https://media.croma.com/image/upload/v1627627399/Croma%20Assets/CMS/LP%20Page%20Banners/2021/PCP%20Mobile/MobileCategoryLandingPage-Power_Banks_30July_cxdvln.png">
+            </div>
+            <img class="One_Img" src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1626357128/Croma%20Assets/CMS/CAtegory/Mobile%20phone%20-%20C10/life_on_track_moe8qr.jpg/mxw_1440,f_auto">
+            <img class="One_Img" src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1625304267/Croma%20Assets/CMS/LP%20Page%20Banners/2021/PCP%20Mobile/Explore_the_range_zigybm.jpg/mxw_1440,f_auto">
+        
+            <div id="Final_Text">
+                <h2>Looking for a mobile phone? Need help to know what's best for you?</h2>
+                <p>With a wide range of gadgets available in the market, it often gets confusing to differentiate one product from its competitor or to choose one that best meets your requirements. This is where Croma steps in. At Croma, we take pride in helping you buy. It is our constant endeavour to understand your needs and to help you find the product best suited for You! Because, a purchase is just the first step to a relationship that will last for years to come.</p>
+                
+                <p>Talking about relationships, Croma has been in the business of selling Mobile phones for over a decade. Our expertise in the field of electronics stem from the fact that we have strong tie-ups and associations with a variety of OEMs like Apple, OnePlus, Samsung, Nokia, Sony, Huawei, Vivo, Xiaomi, Oppo, LG, and more, who are known for being the best mobile brands, not only in India but across the world. In fact, this strong association allows us to gather unique insights of what the market actually wants and hence we curate a wide range of products that are especially designed keeping our customers in mind. Owing to this, you can easily explore our vast catalogue and buy Mobile phones online, but we recommend it is best to experience them in store through one of our representatives to ensure you get the right one.</p>
+                
+                <h2>So, what makes Mobile phones so important?</h2>
+                <p>Phones have revolutionised the way we do things. One can hardly imagine living without them in the present age. The beloved phone that you have now, and the ones that are yet to come, offer a ton of benefits, among which includes connecting you to the world, keeping you updated with all the latest happenings. Smartphones are, as the name suggest, smart devices that are here to make your life simpler and easier. Smartphones show you time, date, calculate numbers, wake you up when you want them to, remind you of something important, and find location through the GPS navigation. They come with cameras so that you can click pictures and make videos that you can cherish later. To keep your boredom away, your phones can play audio and video, and be your e-book reader or your gaming device. The recorder in a phone provides another advantage of recording your own voice and also that of others.</p>
+                
+                <h2>All that is fine, but what about technology?</h2>
+                <p>From pressing on keys, we have moved to pressing the screen directly; we have seen the shift from MBs to GBs, from zero camera to five cameras, from a few megapixels to more than hundred megapixels, from simple calls and games to video calls and high-end gaming phones, from flip to foldable, the growth story of mobile phones has been phenomenal, and, of course, one can never know what marvels the future holds. Mobile technology has advanced drastically and it keeps on evolving. The future will bring enormous development in the telephony segment, and connection will become seamless like never before. Let’s understand a bit of the technology behind Mobile phones.</p>
+                
+                <p>Mobile phones are classified as Smartphones and Feature phones. smartphones have an operating system such as iOS, Android, and they usually have a touchscreen interface. They can connect you to the internet and provide the option to download apps. They are equipped with camera through which photos can be clicked and videos can be recorded, and they also offer storage space so that information can be saved. Smartphones have connectivity options like Bluetooth and Wi-Fi, and they also give an added advantage in the form of personal assistance like Google Assistant, Siri, Alexa, for our convenience. Smartphones can be secured with security features like pin, pattern, fingerprint and face lock. The latest smartphones come with foldable screens! A feature phone on the other hand is a simple phone that comes with button keys which people use mostly to make calls and, to some extent, to send messages.</p>
+                
+                <p>For the purpose of connection, phones use CDMA, GSM, LTE technologies. CDMA stands for Code Division Multiple Access; phones with this network come with built-in chip, which means there is no way of switching to any network other than the one which comes with the phone. GSM stands for Global System for Mobile communication; this is the network which is most popular throughout the world. The phones that supports GSM come with separate slot for inserting SIM card, and you can choose whichever network service provider you like. LTE (Long Term Evolution) is the 4G standard accepted globally, and most new phones utilize 4G for the transmission of data. The term VoLTE, that one often hears a phone supports, refers to Voice over Long Term Evolution which is a way of making calls by using data packet (data which is transmitted through the internet) instead of depending on traditional voice calls. VoLTE has made roaming call charges a thing of the past.</p>
+                
+                <p>Mobile communication standards are named as 1G, 2G, 3G and 4G. The G stands for generation, which is a way of identifying as well as marketing the service packages that are on offer. The era of 1G and 2G are gone. We are presently in the world of 3G and 4G. While 3G has data bandwidth of 2 Mbps – 21 Mbps, 4G has bandwidth of 2 Mbps – 1 Gbps. Each new generation gets better and brings in a faster and smoother way of communication. And as with any electronic devices, the new makes the old obsolete after a certain time. New phones have faster speed, better coverage and reliability. 5G is one such advancement in the mobile phone sphere. It is yet in its nascent stage, but it promises to change the way we communicate. If 4G network seems to do wonders for us, 5G would do ten times more wonders. Smartphones with 5G network would allow high speed and seamless internet connectivity which would particularly help in every real time applications, such as operating self-driving cars which requires a continuous stream of fast internet for receiving signals. Even though 4G provides us a good connection over the internet but it still stops working when you are at a certain place (such as when you are in a running train), with 5G such disturbances are supposed to be completely curtailed. Voice and video calls would be much better than it is at present.</p>
+                
+                <p>While there are a few operating systems, but let us save some time and only emphasize on two which are the most popular, namely Android and iOS. The operating system which is designed only for iPhone and other Apple devices such as iPad, iPod is called iOS. Android is an open-source platform (which allows third parties to use the interface) designed by the search engine giant Google. iPhones have better security features as compared to Android phones, BlackBerry phones, which are not many in the market (but available at Croma), used to have its own operating system but it now relies on Android.</p>
+                
+                <p>Other factors to consider while looking up for a phone are: Memory (the RAM and the internal memory; more the capacity, more the storage capacity; also, most phones come with expandable memory feature); chipset (such as Snapdragon by Qualcomm, Exynos by Samsung, Kirin by Huawei; the latest version of these chipsets provides a faster and smoother user experience); the camera (for instant click of those special moments); battery life which determines how many hours the battery of a phone will last; battery charging technology (such as Dash Charge and Warp Charge by OnePlus, Adaptive Fast Charging by Samsung; Oppo has shown the capability of charging its phone Reno Ace with VOOC technology from zero to 100 percent under 30 minutes). Mobile Phones are now aware of their environment; they have various kinds of sensors (like fingerprint, proximity, compass, etc.) which understands our commands, movements, gestures, and environmental conditions, and accordingly helps us achieve the desired outcome. The photographer in you would surely want a great camera in a phone that captures all the details and comes with good zooming ability, not just the rear camera but the selfie lover should also have a reason to feel good, thus a phone with great rear and front camera will do the trick. The display of new mobile phones are of extremely high quality, this makes watching videos and movies a joy. Smartphones nowadays support 2K and 4K displays, which are giving HD TVs a run for their money.</p>
+                
+                <p>Mobile accessories such as cases and covers, mobile chargers, USB cables and connectors, mobile anti-virus, and selfie sticks not only protect your mobile phones but also come handy in case of an emergency</p>
+                
+                <h2>So, which is the best mobile phone for you?</h2>
+                <p>Well, this is completely subjective to a person's taste, usage and preference. What may be best suited for one, may not actually be a wise choice for the other. Some may value  while some others may focus on features. Mobile phone manufacturers keep adding new and innovative features in mobile phones every year to enable a phone user to easily use apps to get their work done instead of a computer. The latest Smartphones come with a quad or octa core processor to give the user a seamless multitasking experience. The latest mobile phones offer powerful processors and amazing gaming experiences. These Smartphones have powerful GPUs for high-end gaming performance. Also, the latest smartphones have extremely good camera quality. Among the premium phones, Apple and Samsung have been running at the forefront for a while, but their phones are pretty expensive. OnePlus has gained smartphone users’ trust within a short span of time by offering beautifully designed phones with cutting-edge technology, and is surely giving a tough competition to both Apple and Samsung. Xiaomi, with its latest phones, is proving to be a flagship killer.</p>
+                
+                <p>Need more help in choosing the right mobile phone? Have a look at our mobile phone buying guide .</p>
+                
+                <h2>Thinking if you should buy Mobile phones online or from a Store?</h2>
+                <p>Honestly, as long as you know exactly what you want, you can either buy mobile phones online or visit a store to do so. At Croma, we try to ensure a seamless shopping experience - in-store, online or mobile. Among a flurry of benefits, we provide personalised exclusive offers, convenient EMI payment options, etc. Just in case you face any problem with your gadget. Also, while the mobile phone prices in India may vary from brand to brand and technology to feature, we strive hard to provide a wide catalogue of phones for every budget. After all, the core purpose of Croma is to convert each and every dream of our customers into reality.</p>
+                
+                <p>Croma offers an extensive array of protection, repair and maintenance plans for appliances and devices. To keep your electronics running for a longer time, it is a wise decision to explore and buy ZIP Services from Croma. For your mobile phone, you can consider getting Extended Warranty, Spills & Drop, Screen Protection, Device Secure and Device Secure Gold, and On Demand Repair services.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script src="/js/home.js"></script>
