@@ -381,7 +381,7 @@ else{
 }
 }
 document.getElementById('logo').addEventListener('click',()=>{
-    location.href='home.html';
+    location.href='/';
 })
 document.getElementById('search_search').addEventListener('click',()=>{
     let val=document.getElementById('input_search').value;

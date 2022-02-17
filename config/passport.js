@@ -16,7 +16,7 @@ passport.use(new GoogleStrategy({
     callbackURL: "http://localhost:5555/auth/google/callback",
     passReqToCallback   : true
   },
-  async function(request, accessToken, refreshToken, profile, done) {
+  async function( profile, done) {
   console.log(profile?._json?.email)
   let user=await User.findOne({email:profile?._json?.email}).lean().exec()
 
