@@ -49,7 +49,7 @@ app.get( '/auth/google/callback',
 }
 );
 
-app.use('/Home',productController)
+app.use('/',productController)
 
 app.use('/Mobiles',productController2)
 
