@@ -9,11 +9,15 @@
 <img src="https://i.postimg.cc/ZnNgQzss/Screenshot-523.png" height="300px" width="500px">
 <br/>
 <h2>Searching Functionality</h2>
-<p>Able to search the product whatever you like</p>
+<p>Search the product witch you like</p>
 <img src="https://i.postimg.cc/9QbkKp12/Screenshot-524.png" height="300px" width="500px">
+<br/>
+<h2>Google OAuth Functionality</h2>
+<img src="https://i.postimg.cc/Hx91m5TQ/Screenshot-529.png" height="300px" width="500px">
 <br/>
 <h2>Product Details</h2>
 <img src="https://i.postimg.cc/MGGLSQrQ/Screenshot-525.png" height="300px" width="500px"><br/>
+<br/>
 <h2>Cart Items</h2>
 <p>Total price of the all cart item </p>
 <img src="https://i.postimg.cc/GmdNXNFz/Screenshot-526.png" height="300px" width="500px">
